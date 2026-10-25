@@ -16,7 +16,7 @@ HTML, SASS, JavaScript, jQuery, AJAX, Laravel, PHP, Blade, MySQL
 - Optimized images and loading time (lazy loading with eager, high-priority above-the-fold rows, ImageMagick thumbnails of about 5-10 KB): 100 SEO and 85-90 Performance in Lighthouse (local production build).
 
 <img src="Screenshots/emart-home.png" alt="Desktop home view" width="800">
-<img src="Screenshots/emart-category.png" alt="Desktop category view" width="00">
+<img src="Screenshots/emart-category.png" alt="Desktop category view" width="800">
 <img src="Screenshots/emart-product.png" alt="Desktop product view" width="800">
 <img src="Screenshots/emart-favorites.png" alt="Desktop favorites view" width="800">
 <img src="Screenshots/emart-orders.png" alt="Desktop orders view" width="800">
