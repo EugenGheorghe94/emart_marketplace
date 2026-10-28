@@ -1,0 +1,155 @@
+/* 
+---------------------------------------- */
+.stockPriceRows input {
+    width: 75px;
+}
+/* 
+---------------------------------------- */
+.mB-1::before  {
+    content: '\f00c';
+    font-size: 14px;
+    padding-bottom: 2px;
+}
+.mB-2::before {
+    content: '\f00d';
+    font-size: 14px;
+}
+.mB-3::before {
+    content: '\f058';
+    font-size: 16px;
+    font-weight: 100;
+}
+.mB-4::before {
+    content: '\f057';
+    font-size: 16px;
+    font-weight: 100;
+}
+.mB-5::before {
+    content: '\f05e';
+    font-size: 16px;
+}
+.mB-6::before {
+    content: '\e43c';
+    font-size: 14px;
+}
+/* 
+---------------------------------------- */
+.tableTitle {
+    grid-template-columns: 
+        0.3fr 1.3fr 4.5fr 1.2fr 2fr 1.8fr 2.8fr 1.8fr;
+}
+/* 
+---------------------------------------- */
+.productContainer {
+    grid-template-columns: 
+        0.3fr 1.3fr 4.5fr 1.2fr 2fr 1.8fr 2.8fr 1.8fr;
+}
+/* 
+---------------------------------------- */
+.premioLabel {
+    border-radius: 14px;
+    width: fit-content;
+    line-height: 12px;
+    padding: 0px 12px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin: auto;
+    margin-bottom: -2px;
+}
+.enabled {
+    background-image: 
+        linear-gradient(to top right, var(--blue-darkest), var(--red-light));
+}
+.disabled {
+    background-color: var(--gray-dark);
+}
+.flexSection.labelSection {
+    margin-top: 0px;
+    margin-bottom: auto;
+}
+.label, .lastlabel {
+    height: 32px;
+    background-color: var(--blue-lightest);
+    border: 1px solid var(--blue-lighter);
+    color: var(--blue-main);
+    padding: 0px 8px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.label {
+    margin-bottom: 8px;
+}
+.FBE::before {
+    content: '\e098';
+    font-family: 'Font Awesome 5 Free';
+}
+.FBE::after {
+    content: '\f35a';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 100;
+    font-size: 18px;
+}
+.DEALS::before {
+    content: '\25';
+    font-family: 'Font Awesome 5 Free';
+}
+.DEALS::after {
+    content: '\f35a';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 100;
+    font-size: 18px;
+}
+.label, .lastlabel {
+
+    &:hover {
+        background-color: var(--blue-main);
+        color: white;
+    }
+
+    &:active {
+        scale: 0.98;
+    }   
+}
+/* 
+---------------------------------------- */
+.aB-1::before {
+    content: '\f00c';
+    font-size: 14px;
+    padding-bottom: 2px;
+}
+.aB-2::before {
+    content: '\f00d';
+    font-size: 14px;
+    padding-right: 2px;
+}
+.aB-3::before {
+    content: '\f00c';
+    font-size: 14px;
+}
+.aB-4::before {
+    content: '\f00d';
+    font-size: 14px;
+    padding-right: 2px;
+}
+.aB-5::before {
+    content: '\f05e';
+    font-size: 13px;
+}
+.aB-6::before {
+    content: '\e43c';
+    font-size: 14px;
+    padding-right: 2px;
+}
+/* 
+---------------------------------------- */

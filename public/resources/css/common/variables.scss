@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/public/fonts/OpenSans/OpenSans-VariableFont_wdth,wght.woff2') format('woff2-variations');
+    font-weight: 300 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/public/fonts/OpenSans/OpenSans-Italic-VariableFont_wdth,wght.woff2') format('woff2-variations');
+    font-weight: 300 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Icons Pack';
+    src: url('/public/fonts/new-icons.woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+--blue-darkest:     #0065b3;    /* butoane mari active */
+--blue-darker:      #186bd8;    /* scris in footer, active la butoane principale */    
+--blue-dark:        #0075cf;    /* mywallet scris */
+--blue-main:        #0082E6;    /* butoane principala, scris principal, outline butoane */
+--blue-light:       #22A7F0;    /* badge "Top Favorite" */
+--blue-lighter:     #8cc5ff;    /* inactive seller page buttons */
+--blue-lightest:    #f1f8fe;    /* footer background, menu background, search button active */
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+--green-darkest:    #006700;    /* top banner gradient */
+--green-darker:     #009900;    /* main green for text, badges */
+--green-dark:       #2dab2d;    /* 5 star feedback */
+--green-main:       #00b200;    /* beta badge */
+--green-light:      #b0cb1e;    /* 4 star feedback */
+--green-lighter:    #daf9da;    /* light back flip title */
+--green-lightest:   #f4fff4;    /* very light flip background */
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+--gray-darkest:     #575757;    /* scris login, form scris */
+--gray-darker:      #bbbbbb;    /* elements borders */
+--gray-dark:        #cecece;    /* buton active */
+--gray-main:        #dbdbdb;    /* outline form */
+--gray-light:       #eeeded;    /* main sections background */
+--gray-lighter:     #f5f5f5;    /* backgrounds */
+--gray-lightest:    #fafafa;    /* pop-ups background */
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+--violet-darkest:   #2c0935;    /* genius banner background */
+--violet-darker:    #4359c7;    /* scris login, badge-uri */
+--violet-dark:      #7040a4;    /* button marketplace */
+--violet-main:      #9585BF;    /* messages badege */
+--violet-light:     #f8d8ea;    /* seller button hover cancelled */
+--violet-lighter:   #e6e5ec;    /* seller info background - stock near 0 */
+--violet-lightest:  #f5f3ff;    /* campaigns badge background */
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+--red-darkest:      #9b1216;    /* unknown usage */
+--red-darker:       #cc0000;    /* login form outline error, form error */
+--red-dark:         #e30000;    /* seller statistics red */
+--red-main:         #ff1d25;    /* main red for text, badges, prices, buttons */
+--red-light:        #e4006a;    /* campaigns bar gradient */
+--red-lighter:      #d6487e;    /* seller button active, cancelled text*/
+--red-lightest:     #fdeeee;    /* background text */
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+--yellow-lightest:  #fff9e5;    /* seller order status */
+--yellow-lighter:   #f0db9a;    /* seller order status */
+--yellow-main:      #f9bf3b;    /* rating stars */
+--yellow-dark:      #f89406;    /* seller warning */
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+--gray-lightest-sh:  #dcdcdc3d;  /* pop-up card shadow */
+--gray-lighter-sh:  #bbbbbb2e;  /* pop-up card shadow */
+--gray-light-sh:    #0000001a;  /* main cards shadow */
+--gray-main-sh:     #00000040;  /* strong shadow */
+--gray-dark-sh:     #00000050;  /* strong shadow */
+--gray-darker-sh:     #00000060;  /* strong shadow */
+--gray-darkest-sh:     #00000070;  /* strong shadow */
+
+
+
+
+--red-light-sh:     #cc000040;  /* form error all around shadow */
+--red-lighter-sh:   #f658580e;  /* form error all around shadow */
+--blue-light-sh:    #0082e640;  /* buton focus all around shadow */
+--blue-lighter-sh:  #cee8ff56;  /* form focus all around shadow */
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+--brand-gradient-step1: #ff1d25;
+--brand-gradient-step2: #a0328c;
+--brand-gradient-step3: #7040a4;
+--brand-gradient-step4: #4359c7;
+--brand-gradient-step5: #0082e6;
+--brand-gradient-steps: var(--brand-gradient-step1) 5%, var(--brand-gradient-step2) 35%, var(--brand-gradient-step3) 45%, var(--brand-gradient-step4) 55%, var(--brand-gradient-step5) 70%;
+--brand-gradient: linear-gradient(to right, var(--brand-gradient-steps) 70%);
+}
+p { padding: 0; margin: 0; }
+body { padding: 0; margin: 0; }
+input { padding: 0; margin: 0; }
+body { font-family: 'Open Sans'; }

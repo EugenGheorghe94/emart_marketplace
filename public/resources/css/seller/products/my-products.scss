@@ -1,0 +1,261 @@
+/* Sass needed libraries
+---------------------------------------- */
+@use '../../common/components';
+/* 
+---------------------------------------- */
+.mB-1::before  {
+    content: '\f093';
+    font-size: 14px;
+}
+.mB-2::before {
+    content: '\2b';
+    font-size: 14px;
+}
+/* 
+---------------------------------------- */
+.tableTitle {
+    grid-template-columns: 0.2fr 0.65fr 4.5fr 1.5fr 1.5fr 1.5fr;
+}
+/* 
+---------------------------------------- */
+.productContainer {
+    grid-template-columns: 0.2fr 0.65fr 4.5fr 1.5fr 1.5fr 1.5fr;
+}
+/* 
+---------------------------------------- */
+.aB-1::before {
+    content: '\f044';
+    font-size: 15px;
+}
+.aB-2::before {
+    content: '\f0c5';
+    font-size: 15px;
+}
+.aB-3::before {
+    content: '\f0c6';
+    font-size: 14px;
+}
+/* 
+---------------------------------------- */
+.pageMask {
+    background-image: url('/public/resources/files/seller/loader.gif');
+    background-color: var(--gray-light-sh);
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(1px);
+    overflow: hidden;
+    position: fixed;
+    display: none;
+    z-index: 999;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    @extend .wFull;
+}
+.improveProductArea {
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.35);
+    background-color: var(--gray-lighter);
+    transition-duration: 0.5s;
+    flex-direction: column;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 16px 0px;
+    right: -1000px;
+    width: 1000px;
+    display: flex;
+    gap: 16px;
+    top: 64px;
+    height: calc(100% - 64px);
+    @extend .box;
+}
+.container {
+    border: 1px solid var(--gray-light-sh);
+    box-shadow: 0 0 16px var(--gray-lighter-sh);
+    width: calc(100% - 32px);
+    border-radius: 8px;
+    margin: 0px 16px;
+    display: grid;
+    padding: 12px;
+    @extend .back-white;
+    @extend .hAuto;
+    @extend .box;
+}
+.containerTitle {
+    border-bottom: 1px solid var(--gray-light);
+    padding: 0px 0px 8px 12px;
+    margin-bottom: 8px;
+    flex-grow: 1;
+    @extend .sb18;
+    @extend .blue;
+}
+.imageForm {
+    margin: 16px auto auto auto;
+    width: 60%;
+}
+.improvePhoto  {
+    border: 1px dashed var(--blue-lighter);
+    background-color: var(--blue-lightest);
+    border-radius: 8px;
+    padding: 20px 24%;
+    height: 64px;
+    @extend .wAuto;
+    @extend .point;
+    @extend .blue;
+    @extend .lt16;
+    @extend .box;
+}
+.improvePhoto:hover {
+    box-shadow: inset 2px 2px 6px var(--gray-light-sh);
+    border: 1px dashed var(--gray-darker);
+    background-color: var(--gray-light);
+    @extend .darkgray;
+}
+/* 
+---------------------------------------- */
+.containerInputs {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+.improveFormLabel {
+    transition-duration: 0.1s;
+    pointer-events: none;
+    position: relative;
+    margin-left: 12px;
+    padding: 0px 4px;
+    top: 26px;
+    @extend .back-white;
+    @extend .gray;
+    @extend .lt14;
+}
+.improveInput, .improveLastInput, .improveTextarea {
+    border: 1px solid var(--gray-dark);
+    border-radius: 8px;
+    padding: 0px 12px;
+    height: 32px;
+    @extend .darkgray;
+    @extend .no-out;
+    @extend .wFull;
+    @extend .lt16;
+    @extend .box;
+}
+.improveInput {
+    margin-bottom: 8px;
+}
+.improveInput:focus, .improveLastInput:focus {
+    outline: 2px solid var(--blue-light-sh);
+    border: 1px solid var(--blue-lighter);
+}
+.improveInput::placeholder, .improveLastInput::placeholder {
+    @extend .darkgray;
+    @extend .lt14;
+}
+/* 
+---------------------------------------- */
+.improveForm {
+    padding: 0 12px 12px 12px;
+}
+.textarea {
+    font-family: 'Open Sans';
+    resize: vertical;
+    padding: 12px;
+    height: 300px;
+}
+.prodSummary {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+}
+/* 
+---------------------------------------- */
+.container.improveSticky {
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    position: sticky;
+    margin: 0px;
+    top: -16px;
+    z-index: 5;
+    @extend .wFull;
+    @extend .box;
+}
+.productIMG {
+    background-color: var(--blue-lightest);
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+.flex-shrink {
+    align-items: center;
+    flex-shrink: 1;
+    display: flex;
+}
+.productTEXT {
+    flex-direction: column;
+    margin-left: 12px;
+    overflow: hidden;
+    display: flex;
+    min-width: 0;
+    gap: 6px;
+}
+.imp-prod-title {
+    border-bottom: 1px solid var(--gray-light);
+    padding-bottom: 6px;
+    @extend .fbtw;
+}
+.imp-prod-title p:nth-child(1) {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    @extend .sb18;
+    @extend .blue;
+}
+.imp-prod-title p:nth-child(2) {
+    background-color: currentColor;
+    border-radius: 12px;
+    padding: 0px 12px;
+    margin-left: 12px;
+    height: 24px;
+    @extend .sb12;
+    @extend .fcc;
+}
+.imp-prod-title p:nth-child(2) span {
+    color: white
+}
+.imp-prod-sku-id, .imp-prod-offer {
+    @extend .darkgray;
+    @extend .lt14;
+}
+.imp-prod-sku-id p b, .imp-prod-offer p b {
+    @extend .black;
+} 
+.imp-prod-category {
+    @extend .darkgray;
+    @extend .lt14;
+}
+/* 
+---------------------------------------- */
+.saveProductChanges {
+    background-color: var(--blue-main);
+    margin: 12px 12px 12px auto;
+    position: relative;
+    border-radius: 8px;
+    padding: 0px 12px;
+    height: 32px;
+    @extend .no-bor;
+    @extend .no-out;
+    @extend .white;
+    @extend .wAuto;
+    @extend .point;
+    @extend .sb14;
+
+    &:hover {
+        box-shadow: 2px 2px 4px var(--gray-light-sh);
+        background-color: var(--blue-darkest);
+    }
+
+    &:active {
+        scale: 0.97;
+    }
+}
+
+/* 
+---------------------------------------- */

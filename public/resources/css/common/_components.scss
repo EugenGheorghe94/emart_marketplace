@@ -1,0 +1,130 @@
+@use "sass:string";
+/* Display flex options
+---------------------------------------- */
+$positions: start, center, end;
+
+@each $first-pos in $positions {
+    @each $last-pos in $positions {
+        .f#{string.slice($first-pos, 1, 1)}#{string.slice($last-pos, 1, 1)} {
+            display: flex;
+            align-items: $first-pos;
+            justify-content: $last-pos;
+        }
+    }
+}
+
+.fbtw {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Display grid options
+---------------------------------------- */
+$directions: ( row: row, col: columns );
+
+@each $name, $direction in $directions {
+    .grid-#{$name}-auto {
+        display: grid;
+        grid-template-#{$direction}: auto;
+    }
+}
+/* Font weight and size options
+---------------------------------------- */
+$font-weights:   ( th: 100, lt:  400, sb:  600, fb:  700 );
+$font-sizes:     ( 10: 10px, 12: 12px, 13: 13px, 14: 14px, 16: 16px, 18: 18px, 20: 20px, 22: 22px, 24: 24px, 30: 30px );
+
+@each $w-name, $weight in $font-weights {
+    @each $s-name, $size in $font-sizes {
+        .#{$w-name}#{$s-name} {
+            font-weight: $weight;
+            font-size: $size;
+        }
+    }
+}
+/* Color and status options
+---------------------------------------- */
+.white {
+    color: white;
+}
+.gray, .poor, .inactive, .smoderated, .draft {
+    color: var(--gray-darker);
+}
+.darkgray, .blocked {
+    color: var(--gray-darkest);
+}
+.black, .eol, .amoderated {
+    color: black;
+}
+.blue, .standard, .all {
+    color: var(--blue-main);
+}
+.green, .good, .available, .active, .best, .approved, .complete {
+    color: var(--green-darker);
+}
+.yellow, .regular, .unavailable, .unfair, .pending, .basic {
+    color: var(--yellow-main);
+}
+.orange {
+    color: var(--yellow-dark);
+}
+.red, .veryPoor, .invalid, .refused {
+    color: var(--red-main);
+}
+.violet, .amazing, .premio, .lower, .restock, .advanced {
+    color: var(--violet-dark);
+}
+
+.lightgreen {
+    color: var(--green-light);
+}
+
+.maingray {
+    color: var(--gray-main);
+}
+/* Dimensions options
+---------------------------------------- */
+$dimensions: ( Auto: auto, Full: 100% );
+
+@each $name, $dimension in $dimensions {
+    .w#{$name} {
+        width: $dimension;
+    }
+    .h#{$name} {
+        height: $dimension;
+    }
+}
+.box {
+    box-sizing: border-box;
+}
+/* Miscellaneous options
+---------------------------------------- */
+.back-white {
+    background-color: white;
+}
+.mAuto {
+    margin: auto;
+}
+.no-bor {
+    border: none;
+}
+.no-out {
+    outline: none;
+}
+.no-line {
+    text-decoration: none;
+}
+.point {
+    cursor: pointer;
+}
+.link {
+    @extend .point;
+    @extend .blue;
+
+    &:hover {
+        text-decoration: underline;
+        color: var(--violet-darker);
+    }
+}
+.none {
+    display: none;
+}

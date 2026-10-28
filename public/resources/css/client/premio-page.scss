@@ -1,0 +1,244 @@
+/* Sass needed libraries
+---------------------------------------- */
+@use '../../css/common/components';
+/* Font Awesome 5 Free
+---------------------------------------- */
+::before, ::after {
+    font-family: 'Icons Pack';
+}
+/*
+---------------------------------------- */
+b {
+    font-weight: 500;
+    @extend .black;
+}
+/*
+---------------------------------------- */
+.premio-page-right {
+    @extend .fcc;
+    flex-direction: column;
+    gap: 16px;
+}
+.premio-card {
+    @extend .back-white;
+    height: max-content;
+    border: 1px solid var(--gray-light-sh);
+    box-shadow: 0 0 16px var(--gray-lighter-sh);
+    border-radius: 8px;
+    padding: 0px 12px 12px 12px;
+    width: 100%;
+    @extend .box;
+
+    &__top {
+
+        p:nth-Child(1) {
+            @extend .fcs;
+            height: 50px;
+            @extend .lt18;
+            border-bottom: 1px solid var(--gray-light);
+
+            &::before {
+                content: '\E624';
+                margin-right: 8px;
+                @extend .red;
+                @extend .sb20;
+            }
+        }
+
+        p:nth-Child(2) {
+            @extend .lt14;
+            padding: 12px 0px;
+            @extend .darkgray;
+        }
+
+        button:nth-Child(3) {
+            height: 36px;
+            @extend .no-bor;
+            @extend .no-out;
+            width: 250px;
+            background-color: var(--violet-dark);
+            @extend .sb14;
+            @extend .fcc;
+            @extend .white;
+            border-radius: 6px;
+            @extend .point;
+
+            &:active {
+                scale: 0.97;
+            }
+        }
+
+        p:nth-Child(4) {
+            @extend .lt14;
+            padding: 12px 0px;
+            @extend .darkgray;
+        }
+    }
+
+    &__bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 6px;
+        margin: 12px 12px;
+
+        &-banner {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1.5fr 3fr;
+            padding: 24px 24px;
+            border-radius: 6px;
+            @extend .box;
+            column-gap: 24px;
+
+            .banner-dot {
+                width: 36px;
+                height: 36px;
+                position: absolute;
+                background-color: white;
+                border-radius: 20px;
+                box-shadow: 0 0 4px var(--blue-light-sh);
+                right: -22px;
+                top: calc(50% - 18px);
+                z-index: 99;
+                @extend .fcc;
+                @extend .gray;
+                @extend .sb24
+            }
+
+            span {
+                position: absolute;
+            }
+
+            div:nth-Child(3) {
+                
+                p:nth-Child(1) {
+                    @extend .fb24;
+                    @extend .fes;
+
+                    sup {
+                        padding-bottom: 12px;
+                        @extend .fb14;
+                        margin-left: 1px;
+                        margin-right: 4px;
+                    }
+                }
+
+                p:nth-Child(2) {
+                    @extend .lt13;
+                    @extend .darkgray;
+                }
+            }
+        }
+
+        .total-violet {
+            border: 1px dashed var(--violet-main);
+            background-color: var(--violet-lightest);
+        }
+
+        .ship-blue {
+            border: 1px dashed var(--blue-lighter);
+            background-color: var(--blue-lightest);
+        }
+
+        .offers-red {
+            border: 1px dashed var(--green-light);
+            background-color: var(--green-lightest);
+        }
+
+        .total-logo, .ship-logo, .offer-logo {
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        
+        .total-logo {
+            background-image: url('/public/resources/files/users/piggy.svg');
+        }
+
+        .ship-logo {
+            background-image: url('/public/resources/files/users/shipping.svg');
+        }
+
+        .offer-logo {
+            background-image: url('/public/resources/files/users/shopping-bag.svg');
+        }
+    }
+}
+
+.premio-ad {
+    width: 100%;
+    height: 140px;
+    border-radius: 8px;
+    background-image: url('/public/resources/files/users/genius-banner.avif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 16px var(--gray-lighter-sh);
+}
+
+.premio-card {
+
+    &__title {
+        @extend .fcs;
+        height: 50px;
+        @extend .lt18;
+        border-bottom: 1px solid var(--gray-light);
+
+        &::before {
+            content: '\E63A';
+            margin-right: 8px;
+            color: var(--blue-light);
+            @extend .sb20;
+        }
+    }
+
+    &__table {
+        margin: 24px 12px 12px 12px;
+        border: 1px solid var(--gray-light);
+        border-radius: 6px;
+        padding: 0px 12px;
+        @extend .fcc;
+        flex-direction: column;
+
+        div {
+            width: 100%;
+            @extend .fbtw;
+            border-bottom: 1px solid var(--gray-light);
+            height: 50px;
+            padding: 0px 12px;
+            @extend .box;
+            
+            p:nth-Child(1) {
+                @extend .th14;
+                @extend .darkgray;
+            }
+
+            p:nth-Child(2) {
+                @extend .sb14;
+            }
+        }
+
+        .premio-card__button {
+            @extend .no-bor;
+            @extend .fcc;
+
+            button {
+                @extend .sb14;
+                background-color: transparent;
+                @extend .no-bor;
+                @extend .no-out;
+                @extend .violet;
+                padding: 10px 20px;
+                border-radius: 8px;
+                @extend .point;
+
+                &:hover {
+                    background-color: var(--violet-lightest);
+                }
+                &:active {
+                    scale: 0.95;
+                }
+            }
+        }
+    }
+}

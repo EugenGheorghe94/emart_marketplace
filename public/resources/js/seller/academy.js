@@ -1,0 +1,27 @@
+$(document).ready( function() {
+
+
+
+    ////////////////////////////////////////////////////////////////////
+    // Page main menu button click
+    $('.academy').trigger('click');
+    $('.academy').addClass('clicked-main');
+    ////////////////////////////////////////////////////////////////////
+
+    
+
+    ////////////////////////////////////////////////////////////////////
+    // Page small icon button click
+    $('.academy-div').css({color: 'var(--blue-main)'});
+    $('.academy-div').css({backgroundColor: 'var(--blue-lightest)'});
+    $('.academy-icon-menu').trigger('click');
+    ////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+});

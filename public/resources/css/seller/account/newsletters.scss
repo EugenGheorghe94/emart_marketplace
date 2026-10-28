@@ -1,0 +1,49 @@
+/* Sass needed libraries
+---------------------------------------- */
+@use '../../common/components';
+/* 
+---------------------------------------- */
+.mB-1::before  {
+    content: '\f064';
+    font-size: 14px;
+}
+.mB-2::before {
+    content: '\f256';
+    font-size: 14px;
+}
+.mB-3::before {
+    content: '\f06e';
+    font-size: 14px;
+}
+.mB-4::before {
+    content: '\f070';
+    font-size: 14px;
+}
+/* 
+---------------------------------------- */
+.tableTitle {
+    grid-template-columns: 0.2fr 0.4fr 1.5fr 5fr 0.8fr 1.2fr 1.2fr 1.2fr;
+}
+/* 
+---------------------------------------- */
+.productContainer {
+    grid-template-columns: 0.2fr 0.4fr 1.5fr 5fr 0.8fr 1.2fr 1.2fr 1.2fr;
+}
+/* 
+---------------------------------------- */
+.aB-1::before {
+    content: '\f06e';
+    font-size: 14px;
+}
+.aB-2::before {
+    content: '\f070';
+    font-size: 14px;
+}
+/* 
+---------------------------------------- */
+.newsletter-date::before {
+    content: '\f133';
+    margin-right: 8px;
+    @extend .lt16;
+    @extend .black;
+}

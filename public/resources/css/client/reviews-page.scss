@@ -1,0 +1,350 @@
+/* Sass needed libraries
+---------------------------------------- */
+@use '../../css/common/components';
+/* Font Awesome 5 Free
+---------------------------------------- */
+::before, ::after {
+    font-family: 'Icons Pack';
+}
+/*
+---------------------------------------- */
+b {
+    font-weight: 500;
+    @extend .black;
+}
+/* Reviews empty
+---------------------------------------- */
+.reviews-area__empty {
+    padding-bottom: 24px;
+    height: auto;
+    @extend .fcc;
+    flex-direction: column;
+    gap: 8px;
+    
+    div {
+        margin: 24px;
+        background-image: url('/public/resources/files/users/account/myaccount-market-research.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 200px;
+    }
+
+    p:nth-Child(2) {
+        width: 450px;
+        height: auto;
+        text-align: center;
+        @extend .lt16;
+        margin-bottom: 12px;
+    }
+
+        p:nth-Child(3) {
+        width: 450px;
+        height: auto;
+        text-align: center;
+        @extend .th13;
+        @extend .darkgray;
+    }
+
+    a {
+        @extend .lt14;
+        padding: 6px 16px;
+        @extend .blue;
+        @extend .point;
+        border-radius: 8px;
+        @extend .no-line;
+
+        &:hover {
+            background-color: var(--blue-lightest);
+        }
+
+        &:active {
+            scale: 0.97;
+        }
+    }
+}
+/*
+---------------------------------------- */
+.reviews-area {
+    width: 100%;
+    height: auto;
+    margin: 0px 0px auto 0px;
+    @extend .back-white;
+    border: 1px solid var(--gray-light-sh);
+    box-shadow: 0 0 16px var(--gray-lighter-sh);
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    &__title {
+        height: 50px;
+        margin: 0px 12px;
+        @extend .fcs;
+        @extend .lt18;
+        border-bottom: 1px solid var(--gray-light);
+    }
+
+    &__cards {
+        padding-bottom: 12px;
+
+        
+        div:last-of-type {
+            border-bottom: none;
+        }
+    }
+}
+/* Product reviews
+---------------------------------------- */
+.reviews-area__cards {
+
+    .oneReview {
+        border-bottom: 1px solid var(--gray-light);
+        grid-template-columns: auto 5fr;
+        margin: 0px 12px;
+        padding: 12px 0px;
+        column-gap: 24px;
+        display: grid;
+        @extend .hAuto;
+        @extend .box;
+    }
+
+    .product {
+        @extend .box;
+
+        a {
+            display: block;
+            height: 100%;
+            aspect-ratio: 1 / 1;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    .review-body {
+        display: grid;
+        @extend .box;
+
+        div:nth-Child(1) {
+            margin-bottom: 8px;
+            display: grid;
+            grid-template-columns: 8fr auto;
+
+            p:nth-Child(1) {
+                @extend .black;
+                @extend .fb16;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            p:nth-Child(2) {
+                @extend .fcc;
+                @extend .darkgray;
+                @extend .th12;
+            }
+        }
+
+        &__title {
+            margin-bottom: 12px;
+            @extend .lt16;
+        }
+
+        &__stars {
+            height: 32px;
+            gap: 2px;
+            @extend .fcs;
+
+            .review-stars {
+                position: relative;
+                width: fit-content;
+
+                div::before {
+                    
+                    content: '\e671\e671\e671\e671\e671';
+                    letter-spacing: 2px;
+                }
+
+                &__filled {
+                    white-space: nowrap;
+                    position: absolute;
+                    overflow: hidden;
+                    left: 0px;
+                    top: -3px;
+                }
+            }
+        }
+
+        &__text {
+            margin-bottom: 12px;
+            min-height: auto;
+            @extend .lt14;
+            @extend .darkgray;
+            @extend .fcs;
+        }
+
+        &__buttons {
+            @extend .gray;
+            @extend .th16;
+            @extend .fes;
+
+            button:nth-Child(1) {
+                pointer-events: none;
+            }
+
+            button {
+                border: 1px solid transparent;
+                border-radius: 8px;
+                padding: 6px 6px;
+                @extend .back-white;
+                @extend .no-bor;
+                @extend .no-out;
+                @extend .wAuto;
+                @extend .point;
+                @extend .blue;
+                @extend .lt14;
+                @extend .box;
+
+                &:hover {
+                    background-color: var(--blue-lightest);
+                    border: 1px solid var(--blue-main);
+                }
+
+                &:active {
+                    scale: 0.95;
+                }
+            }
+
+            :nth-Child(1)::before {
+                content: '\E6C5';
+                margin-right: 6px;  
+            }
+
+            :nth-Child(2)::before {
+                content: '\E6C3';
+                margin-right: 6px;  
+            }
+        }
+    }
+}
+/*
+---------------------------------------- */
+.loader {
+    height: 400px;
+    background-image: url('/public/resources/files/seller/loader.gif');
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+/* Pagination
+---------------------------------------- */
+.pagination {
+    border: 1px solid var(--gray-light-sh);
+    box-shadow: 0 0 16px var(--gray-lighter-sh);
+    border-radius: 8px;
+    margin-top: 16px;
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    @extend .fbtw;
+    @extend .back-white;
+    @extend .box;
+
+    p {
+        @extend .lt12;
+        @extend .darkgray;
+
+        b {
+            @extend .sb12;
+        }
+    }
+
+    &-buttons {
+        @extend .fcc;
+        gap: 12px;
+
+        .prevPage {
+            width: 120px;
+            height: 30px;
+            border-radius: 4px;
+            border: 1px solid var(--blue-main);
+            @extend .no-out;
+            @extend .back-white;
+            @extend .blue;
+            @extend .point;
+
+            &:hover {
+                background-color: var(--blue-lightest);
+            }
+
+            &:active {
+                scale: 0.95;
+            }
+        }
+
+        .pageNumber {
+            width: 30px;
+            height: 30px;
+            border-radius: 4px;
+            border: 1px solid var(--blue-main);
+            @extend .no-out;
+            @extend .back-white;
+            @extend .blue;
+            @extend .point;
+
+            &:hover {
+                background-color: var(--blue-lightest);
+            }
+
+            &:active {
+                scale: 0.9;
+            }
+        }
+
+        .nextPage {
+            width: 100px;
+            height: 30px;
+            border-radius: 4px;
+            border: 1px solid var(--blue-main);
+            @extend .no-out;
+            @extend .back-white;
+            @extend .blue;
+            @extend .point;
+
+            &:hover {
+                background-color: var(--blue-lightest);
+            }
+
+            &:active {
+                scale: 0.95;
+            }
+        }
+
+        .pageinview {
+            pointer-events: none;
+            background-color: var(--blue-main);
+            border: 1px solid var(--blue-main);
+            color: white;
+            @extend .sb13;
+
+        }
+
+        .disabled {
+            pointer-events: none;
+            border: 1px solid var(--gray-dark);
+            color: var(--gray-dark);
+            @extend .sb13;
+        }
+
+        .dotdotdot {
+            width: 30px;
+            height: 30px;
+            border-radius: 4px;
+            //border: 1px solid var(--blue-main);
+            @extend .no-out;
+            @extend .back-white;
+            @extend .blue;
+            @extend .point;
+        }
+
+    }
+}

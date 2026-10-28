@@ -1,0 +1,33 @@
+/* 
+---------------------------------------- */
+.mB-1::before  {
+    content: '\f019';
+    font-size: 14px;
+}
+/* 
+---------------------------------------- */
+.tableTitle {
+    grid-template-columns: 0.3fr 1.2fr 5fr 1.5fr 1.5fr 2.8fr 1.5fr 1.5fr 1.5fr;
+}
+/* 
+---------------------------------------- */
+.productContainer {
+    grid-template-columns: 0.3fr 1.2fr 5fr 1.5fr 1.5fr 2.8fr 1.5fr 1.5fr 1.5fr;
+}
+/* 
+---------------------------------------- */
+.borderBottom {
+    cursor: pointer;
+    border-bottom: 1px solid var(--gray-light);
+}
+.borderBottom:hover {
+    text-decoration: underline;
+}
+.stdTextCenter.ratingStars {
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+    color: var(--yellow-main);
+    font-size: 14px;
+}
+/* 
+---------------------------------------- */

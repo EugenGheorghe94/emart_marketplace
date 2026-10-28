@@ -1,0 +1,348 @@
+/* Sass needed libraries
+---------------------------------------- */
+@use '../../css/common/components';
+/* Body reserves space for scroll
+---------------------------------------- */
+body {
+    overflow-y: scroll;
+}
+/* Font Awesome 5 Free
+---------------------------------------- */
+::before, ::after {
+    font-family: 'Font Awesome 5 Free';
+}
+/* Font Awesome 5 Free
+---------------------------------------- */
+b {
+    font-weight: 500;
+    color: black;
+}
+/* Body
+---------------------------------------- */
+body{
+    background-color: var(--gray-light);
+}
+/*
+---------------------------------------- */
+.mainHeaderArea {
+    box-shadow: 0 0 24px var(--gray-lighter-sh);
+    grid-template-columns: auto 18fr auto;
+    grid-template-rows: 49px;
+    border-bottom: 1px solid var(--gray-dark);
+    display: grid;
+    height: 50px;
+    background-color: var(--blue-darkest);
+    @extend .wFull;
+    @extend .box;
+}
+.headLogoArea {
+    width: 136px;
+    padding: 12px;
+    @extend .box;
+    @extend .fcc;
+    @extend .point;
+    
+
+    img {
+        width: 112px;
+    }
+
+    &:hover {
+       background-color: var(--blue-dark);
+    }
+
+    &:active.headLogoArea img {
+        scale: 0.97;
+    }
+}
+.headMainArea {
+    margin: 6px 0px;
+    border-right: 1px solid var(--gray-main);
+    border-left: 1px solid var(--gray-main);
+    padding: 0 12px;
+    @extend .white;
+    @extend .lt30;
+    @extend .box;
+    @extend .fcs;
+}
+.headLangArea {
+    padding: 0px 12px;
+    @extend .fcc;
+    @extend .point;
+    @extend .box;
+
+    span {
+        border: 1px solid var(--gray-dark);
+        padding-bottom: 5px;
+        border-radius: 2px;
+        margin-right: 4px;
+        height: 10px;
+        width: 20px;
+        @extend .back-white;
+    }
+
+    &:hover {
+        background-color: var(--blue-dark);
+    }
+
+    &:active {
+        scale: 0.95;
+    }
+
+    p {
+        width: 70px;
+        @extend .white;
+        @extend .hAuto;
+        @extend .sb16;
+        @extend .fcc;
+    }
+
+    .down::after {
+        content: '\f107';
+        transform: rotate(360deg);
+        transition-duration: 0.3s;
+        margin-left: 10px;
+        @extend .white;
+        @extend .sb12;
+    }
+
+    .up::after {
+        content: '\f107';
+        transform: rotate(180deg);
+        transition-duration: 0.3s;
+        margin-left: 10px;
+        @extend .white;
+        @extend .sb12;
+    }
+}
+
+.langSelect-area {
+    box-shadow: 0 0 12px var(--gray-light-sh);
+    border: 1px solid var(--gray-dark);
+    border-radius: 8px;
+    position: absolute;
+    overflow: hidden;
+    display: none;
+    height: auto;
+    width: 180px;
+    right: 12px;
+    top: 40px;
+    @extend .back-white;
+    @extend .point;
+    
+    div {
+        border-bottom: 1px solid var(--gray-main);
+        background-color: var(--gray-light);
+        cursor: default;
+        height: 24px;
+        @extend .black;
+        @extend .sb12;
+        @extend .fcc;
+    }
+
+    p {
+        border-bottom: 1px solid var(--gray-light);
+        padding: 0px 12px;
+        height: 40px;
+        @extend .darkgray;
+        @extend .lt12;
+        @extend .fcs;
+
+        span {
+            border: 1px solid var(--gray-dark);
+            padding-bottom: 5px;
+            border-radius: 2px;
+            margin-right: 12px;
+            height: 10px;
+            width: 20px;
+        }
+
+        &:hover {
+            background-color: var(--blue-lightest);
+            @extend .blue;
+        }
+    }
+}
+/* LOGIN switch
+---------------------------------------- */
+.loginFirstStep {
+    display: block;
+}
+.loginSecondStep {
+    display: none;
+}
+.registerFirstStep {
+    display: none;
+}
+/* Common
+---------------------------------------- */
+.mainLoginArea {
+    margin: 160px auto auto auto;
+    border-radius: 8px;
+    width: 360px;
+    @extend .hAuto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+.blankCard {
+    border: 1px solid var(--gray-light-sh);
+    box-shadow: 0 0 16px var(--gray-lighter-sh);
+    padding: 15px;
+    @extend .back-white;
+    @extend .box;
+}
+.loginTitle {
+    margin-bottom: 30px;
+    @extend .lt24;
+    @extend .blue;
+}
+.formLabel {
+    @extend .sb14;
+    letter-spacing: 4%;
+}
+.formInput {
+    border: 1px solid var(--gray-main);
+    outline: 2px solid transparent;
+    transition-duration: 0.1s;
+    border-radius: 8px;
+    padding: 0 10px;
+    margin-top: 5px;
+    font-size: 15px;
+    height: 34px;
+    @extend .darkgray;
+    @extend .wFull;
+    @extend .box; 
+
+    &::placeholder {
+        color: var(--gray-dark);
+        font-size: 15px;
+    }
+    
+    &:focus {
+        outline: 2px solid var(--blue-light-sh);
+        border: 1px solid var(--blue-lighter);
+    }
+}
+.formSubmit {
+    background-color: var(--blue-main);
+    outline: 2px solid transparent;
+    transition-duration: 0.1s;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 0 10px;
+    height: 33px;
+    @extend .no-bor;
+    @extend .white;
+    @extend .wAuto;
+    @extend .point;
+    @extend .fb14;
+
+    &:hover {
+        background-color: var(--blue-darkest);
+    }
+    
+    &:focus {
+        outline: 2px solid var(--blue-light-sh);
+    }
+}
+.formReturn {
+    border: 1px solid var(--gray-darkest);
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 14px;
+    padding: 0 10px;
+    height: 35px;
+    @extend .back-white;
+    @extend .darkgray;
+    @extend .no-out;
+    @extend .wAuto;
+    @extend .point;
+
+    &:hover {
+        background-color: var(--gray-darkest);
+        @extend .white;
+    }
+    
+    &:focus {
+        outline: 2px solid var(--gray-light-sh);
+    }
+}
+.errorWarning {
+    color: var(--red-darker);
+    margin-bottom: 4px;
+    margin-top: 4px;
+    display: none;
+    @extend .sb14;
+}
+/* LOGIN first step
+---------------------------------------- */
+
+
+
+/* LOGIN second step
+---------------------------------------- */
+.checkBoxArea {
+    margin-bottom: 10px;
+    letter-spacing: 4%;
+    margin-top: 18px;
+    @extend .sb14;
+}
+.checkBoxArea label {
+    margin-left: 4px;
+}
+.LSS-form-2 > a {
+    letter-spacing: 4%;
+    font-size: 12px;
+    @extend .no-line;
+    @extend .blue;
+    @extend .point;
+}
+.LSS-form-2 > a:hover {
+    text-decoration: underline;
+    @extend .darkgray;
+}
+.buttonsLayout {
+    @extend .fbtw;
+}
+/* REGISTER first step
+---------------------------------------- */
+.mainFooterArea {
+    position: absolute;
+    height: 60px;
+    bottom: 0%;
+    top: auto;   
+    @extend .wFull;
+}
+.footerTextArea {
+    border-top: 1px solid var(--gray-main);
+    grid-template-rows: repeat(2, 1fr);
+    padding-bottom: 8px;
+    text-align: center;
+    padding-top: 12px;
+    display: grid;
+    height: 60px;
+    margin: 0px 64px;
+    @extend .wAuto;
+    @extend .th14;
+    @extend .box;
+
+    p {
+        @extend .darkgray;
+        text-align: center;
+    }
+
+    b {
+        @extend .lt13;
+    }
+
+    a {
+        @extend .no-line;
+        @extend .point;
+        @extend .blue;
+        @extend .lt13;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+body { padding: 0; margin: 0; font-family: Helvetica; }
+/* div { outline: inset 1px black; } */
+p { padding: 0; margin: 0; }
+input { padding: 0; margin: 0; }
+/*///////////////////////////////////////////////////////////*/
+body {
+    height: 3894px;
+    overflow-y: scroll;
+    background-color: var(--gray-light);
+}
+body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/resources/backdrops/P14.jpg');
+    background-size: 101%;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: -1;
+    pointer-events: none;
+    height: 3894px;
+}
+/*///////////////////////////////////////////////////////////*/
+.mainPageSection {
+    background-color: transparent;
+    height: 3824px;
+}

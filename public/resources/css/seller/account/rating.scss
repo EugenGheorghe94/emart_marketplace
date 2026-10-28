@@ -1,0 +1,655 @@
+/* Sass needed libraries
+---------------------------------------- */
+@use '../../common/components';
+/* Body reserves space for scroll
+---------------------------------------- */
+body {
+    overflow-y: scroll;
+}
+/* Font Awesome 5 Free
+---------------------------------------- */
+::before, ::after {
+    font-family: 'Font Awesome 5 Free';
+}
+/* Font Awesome 5 Free
+---------------------------------------- */
+b {
+    font-weight: 500;
+    color: black;
+}
+/* White panel + shadow
+---------------------------------------- */
+.wh-panel-sh {
+    border-radius: 8px;
+    border: 1px solid var(--gray-light-sh);
+    box-shadow: 0 0 16px var(--gray-lighter-sh);
+    @extend .back-white;
+    @extend .wFull;
+    @extend .box;
+    opacity: 1;
+}
+.link {
+    text-decoration: none;
+    @extend .blue;
+    @extend .point;
+}
+.link:hover {
+    text-decoration: underline;
+}
+/* Colored part for bar chart
+---------------------------------------- */
+$sizes: 20, 40, 60, 80, 100;
+
+@each $size in $sizes {
+    .sz-#{$size} {
+    width: $size * 1%;
+    }
+}
+/* Main Container
+---------------------------------------- */
+.mainPageSection {
+    background-color: var(--gray-light);
+    height: auto;
+}
+/* Top spacer element
+---------------------------------------- */
+.topSpaceElement {
+    height: 64px;
+    @extend .wFull;
+}
+/* Page promo
+---------------------------------------- */
+.promoArea {
+    height: 0px;
+    @extend .wFull;
+}
+/* Page title elment
+---------------------------------------- */
+.pageTitle {
+    margin: 32px;
+    @extend .wAuto;
+    @extend .blue;
+    @extend .lt24;
+    @extend .box;
+}
+/* Rating summary
+---------------------------------------- */
+.ratingSummary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    padding: 0px 24px;
+    @extend .wFull;
+    @extend .box;
+}
+.reviews-area {
+    height: auto;
+    opacity: 1;
+
+    &__title {
+        text-align: center;
+        @extend .lt14;
+        @extend .wFull;
+    }
+
+    &__title-text {
+        padding: 12px 0px;
+        margin: 0px 12px;
+        border-bottom: 1px solid var(--gray-light);
+        @extend .darkgray;
+        @extend .box;
+    
+        span {
+            @extend .link;
+        }
+    }
+
+    &__container {
+        padding: 12px;
+        display: grid;
+        grid-template-columns: 1fr 2.8fr;
+        @extend .box;
+    }
+
+    &__stars {
+        display: grid;
+        grid-template-rows: 3fr 1fr;
+    }
+
+    &__stars-number {
+        font-size: 64px;
+        font-weight: 600;
+        margin-top: auto;
+        margin-bottom: 0px;
+        text-align: center;
+        @extend .black;
+    }
+
+    &__stars-emoji {
+        text-align: center;
+    
+        &::before {
+            content: '\f005\f005\f005\f005\f5c0';
+            font-weight: 900;
+            @extend .yellow;
+            @extend .lt24;
+        }
+    }
+
+    &__graph-row {
+        border: 2px solid white;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 3fr 8fr 2fr;
+        @extend .lt14;
+        @extend .box;
+
+        div:nth-child(1) {
+            text-align: start;
+        }
+
+        div:nth-child(2) {
+            border: 1px solid var(--gray-main);
+            background-color: var(--gray-light);
+            border-radius: 4px;
+            @extend .wFull;
+            @extend .hFull;
+            @extend .box;
+        
+            div {
+                background-color: currentColor;
+                border-radius: 4px;
+                @extend .hFull;
+                opacity: 0.7;
+            }
+        }
+
+        div:nth-child(3) {
+            padding-left: 12px;
+            @extend .link;
+        }
+    }
+}
+.timeline-area {
+    padding: 12px;
+    @extend .box;
+    
+    &__row {
+        height: 30px;
+        border-bottom: 1px solid var(--gray-light);
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+        @extend .box;
+    }
+
+    &__row-title {
+        @extend .fsc;
+        @extend .sb14;  
+    }
+
+    &__row-label {
+        padding-left: 4px;
+        @extend .fcs;
+        @extend .lt14;
+        @extend .darkgray;
+    }
+
+    &__row-cell {
+        @extend .fcc;
+        @extend .lt14;
+        @extend .link;
+    }
+}
+/* 
+---------------------------------------- */
+.searchForm {
+    padding: 24px 24px 0px 24px;
+    @extend .wFull;
+    @extend .box;
+}
+
+.search-area {
+    display: grid;
+    grid-template-rows: auto;
+
+    &__top {
+        margin: 12px 12px 0px 12px;
+        padding-bottom: 24px;
+        display: flex;
+        gap: 32px;
+        border-bottom: 1px solid var(--gray-light);
+
+        div {
+            display: grid;
+        }
+
+        label {
+            padding-left: 4px;
+            margin-bottom: 8px;
+            @extend .black;
+            @extend .sb14;
+        }
+
+        select {
+            width: 250px;
+            height: 32px;
+            border: 1px solid var(--gray-dark);
+            border-radius: 6px;
+            color: var(--gray-darkest);
+            @extend .back-white;
+            padding: 0px 8px;
+            @extend .no-out;
+            @extend .point;
+        }
+
+        input {
+            width: 250px;
+            height: 32px;
+            border: 1px solid var(--gray-dark);
+            border-radius: 6px;
+            color: white;
+            @extend .back-white;
+            padding-left: 8px;
+            @extend .no-out;
+            @extend .point;
+            font-family: 'Open Sans';
+        }
+
+        input[type="month"]::-webkit-calendar-picker-indicator {
+            width: 20px;
+            height: 20px;
+            padding: 8px;
+            font-size: 16px;
+            @extend .point;
+            background-color: var(--gray-light);
+        }
+
+        option {
+            @extend .black;
+        }
+
+        select:focus , input:focus {
+            outline: 2px solid var(--blue-light-sh);
+            border: 1px solid var(--blue-lighter);
+        }
+    }
+
+    &__bottom {
+        padding: 12px;
+        @extend .box;
+        @extend .fbtw;
+
+        div:nth-child(1) {
+            @extend .darkgray;
+            @extend .lt14;
+
+            span {
+                @extend .sb14;
+                @extend .black;
+            }
+        }
+    
+        button {
+            border-radius: 4px;
+            padding: 8px 12px;
+            @extend .no-bor;
+            @extend .no-out;
+            @extend .point;
+        }
+
+        button:nth-child(1) {
+            @extend .blue;
+            @extend .back-white;
+            
+            &::before {
+                content: '\2b';
+                margin-right: 6px;
+                @extend .sb12;
+            }
+
+            &:hover {
+                background-color: var(--blue-lightest);
+            }
+        }
+
+        button:nth-child(2) {
+            margin: 0px 12px;
+            background-color: var(--blue-main);
+            @extend .white;
+            @extend .back-white;
+
+            &::before {
+                content: '\f002';
+                margin-right: 6px;
+                @extend .sb12;
+            }
+
+            &:hover {
+                background-color: var(--blue-darkest);
+            }
+        }
+
+        button:nth-child(3) {
+            @extend .blue;
+            @extend .back-white;
+
+            &::before {
+                content: '\f00d';
+                margin-right: 6px;
+                @extend .sb12;
+                @extend .red;
+            }
+
+            &:hover {
+                @extend .red;
+                background-color: var(--red-lightest);
+            }
+        }
+    }
+}
+/* 
+---------------------------------------- */
+.ratingTable {
+    padding: 24px 24px 0px 24px;
+    @extend .wFull;
+    @extend .box;
+    margin-bottom: 32px;
+}
+.rating-table {
+    padding: 12px 12px 32px 12px;
+
+    &__row {
+        height: 50px;
+        padding: 0px 12px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 6fr 1fr;
+        border-bottom: 1px solid var(--gray-light);
+
+        p:nth-child(1) {
+            @extend .lt14;
+            @extend .darkgray;
+            @extend .fcs;
+        }
+
+        p:nth-child(2) {
+            @extend .lt14;
+            @extend .darkgray;
+            @extend .fcs;
+
+            span {
+                @extend .link;
+            }
+        }
+
+        p:nth-child(3) {
+            @extend .fcs;
+            @extend .lt14;
+            @extend .darkgray;
+        }
+
+        p:nth-child(4) {
+            @extend .fce;
+        }
+    }
+}
+/* Pagination form
+---------------------------------------- */
+.bottomPageForm {
+    display: flex;
+    justify-self: end;
+    margin: 0px 24px;
+    @extend .wAuto;
+    @extend .hAuto;
+    @extend .box;
+}
+.itemsOptions {
+    border: 1px solid var(--gray-light-sh);
+    box-shadow: 0 0 16px var(--gray-lighter-sh);
+    border-radius: 8px;
+    padding: 12px;
+    @extend .back-white;
+    @extend .fbtw;
+    @extend .wAuto;
+    @extend .box;
+    @extend .lt14;
+    @extend .black;
+}
+.itemsOptions form {
+    height: 30px;
+    margin: auto;
+}
+.itemsOptions label {
+    margin-right: 10px;
+}
+.itemsOptions select {
+    box-shadow: 0 0 2px var(--gray-light-sh);
+    background-color: var(--gray-light);
+    border: 1px solid var(--gray-main);
+    margin-right: 10px;
+    border-radius: 4px;
+    padding: 4px 12px;
+    @extend .no-out;
+    @extend .point;
+}
+.itemsOptions select:hover {
+    @extend .back-white;
+}
+.itemsOptions button {
+    font-family: 'Font Awesome 5 Free';
+    background-color: var(--blue-main);
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 36px;
+    @extend .no-bor;
+    @extend .point;
+    @extend .white;
+    @extend .hFull;
+    @extend .fb16;
+}
+.prevPage::before {
+    content: '\f104'
+}
+.nextPage::before {
+    content: '\f105'
+}
+.itemsOptions button:hover {
+    background-color: var(--blue-darkest);
+}
+/* Feedback link
+---------------------------------------- */
+.feedbackLink {
+    margin: 0px 32px;
+    width: fit-content;
+    @extend .point;
+    @extend .lt12;
+    @extend .fcs;
+}
+.feedbackLink p:nth-child(1)::before {
+    content: '\f005';
+    margin-right: 4px;
+    font-weight: 100;
+}
+.feedbackLink:hover p:nth-child(2) {
+    text-decoration: underline;
+}
+.feedbackLink:hover p:nth-child(1)::before {
+    font-weight: 900;
+}
+/* Feedback modal
+---------------------------------------- */
+.feedback-overlay {
+    background-color: var(--gray-light-sh);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    @extend .wFull;
+    @extend .hFull;
+}
+.feedback-modal {
+    box-shadow: 0 0 24px var(--gray-light-sh);
+    grid-template-rows: 1fr auto 2.5fr 1fr;
+    border: 1px solid var(--gray-main);
+    margin: 100px auto auto auto;
+    border-radius: 8px;
+    display: grid;
+    height: 260px;
+    width: 500px;
+    @extend .back-white;
+    @extend .box;
+}
+body.showFeedback {
+    overflow: hidden;
+}
+.feedback-title {
+    border-bottom: 1px solid var(--gray-main);
+    padding: 0px 0px 0px 12px;
+    margin: 0px 12px;
+    @extend .black;
+    @extend .fbtw;
+    @extend .sb18;
+    @extend .box;
+}
+.closeButton {
+    background-color: transparent;
+    color: var(--gray-main);
+    @extend .no-out;
+    @extend .no-bor;
+    @extend .point;
+    @extend .sb18;
+}
+.closeButton::before {
+    content: '\f00d';
+}
+.closeButton:hover {
+    color: var(--blue-main);
+}
+.modalDisclaimer {
+    grid-template-rows: 1fr 1fr;
+    margin: 12px 12px;
+    display: grid;
+    @extend .darkgray;
+    @extend .hAuto;
+    @extend .lt12;
+}
+.modalDisclaimer div:nth-child(1)::before {
+    content: '\f0f3';
+    margin-right: 4px;
+    color: var(--yellow-main);
+    font-weight: 900;
+}
+.emoji-area {
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 12px;
+    display: grid;
+    margin: auto;
+    width: 90%; 
+}
+.emoji {
+    color: var(--gray-light);
+    font-size: 64px;
+    @extend .point;
+    @extend .fcc;
+}
+.face-1::before {
+    content: '\f556';
+}
+.face-2::before {
+    content: '\f119';  
+}
+.face-3::before {
+    content: '\f11a';  
+}
+.face-4::before {
+    content: '\f118';
+}
+.face-5::before {
+    content: '\f5b8';
+}
+.face-1:hover {
+    color: var(--red-main);
+}
+.face-2:hover {
+    color: var(--yellow-dark);
+}
+.face-3:hover {
+    color: var(--yellow-main);
+}
+.face-4:hover {
+    color: var(--green-main);
+}
+.face-5:hover {
+    color: var(--blue-main);
+}
+.closeWithoutFeedback {
+    border-top: 1px dotted var(--gray-main);
+    background-color: var(--gray-lighter);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 0px 12px;
+    @extend .lt12;
+    @extend .fcs;
+}
+.closeWithoutFeedback button {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: var(--blue-light);
+    border-radius: 4px;
+    padding: 4px 8px;
+    @extend .no-out;
+    @extend .no-bor;
+    @extend .point;
+    @extend .box;
+}
+.closeWithoutFeedback button::before {
+    content: '\f00d';
+    color: var(--red-main);
+    margin-right: 6px;
+    font-weight: 900;
+    padding-top: 1px;
+}
+.closeWithoutFeedback button:hover {
+    background-color: var(--blue-lightest);
+    border: 1px solid var(--blue-light);
+}
+/* Notification modal
+---------------------------------------- */
+.notification {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    border-left: 12px solid currentColor;
+    outline: 1px dotted var(--gray-dark);
+    transition: right 0.6s;
+    pointer-events: none;
+    border-radius: 12px;
+    padding: 16px 32px;
+    position: fixed;
+    right: -300px;
+    bottom: 16px;
+    width: 200px;
+    height: 80px;
+    @extend .back-white;
+    @extend .box;
+}
+.success {
+    color: var(--green-dark);
+}
+.error {
+    color: var(--red-dark);
+}
+.notification p:nth-child(1) {
+    color: currentColor;
+    margin-bottom: 4px;
+    @extend .wAuto;
+    @extend .hAuto;
+    @extend .sb20;
+    @extend .fss;
+}
+.notification p:nth-child(2) {
+    @extend .darkgray;
+    @extend .lt12;
+    @extend .fcs;
+}

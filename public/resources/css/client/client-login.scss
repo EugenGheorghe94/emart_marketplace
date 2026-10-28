@@ -1,0 +1,506 @@
+/* Sass needed libraries
+---------------------------------------- */
+@use '../common/components';
+/* Body reserves space for scroll
+---------------------------------------- */
+/* Font Awesome 5 Free
+---------------------------------------- */
+::before, ::after {
+    font-family: 'Font Awesome 5 Free';
+}
+/* Font Awesome 5 Free
+---------------------------------------- */
+b {
+    font-weight: 500;
+    color: black;
+}
+img {
+    pointer-events: none;
+}
+/* Removes defaul blue auto-input fill
+---------------------------------------- */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: var(--gray-darkest) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+/* Main frame area
+---------------------------------------- */
+.mainArea {
+    user-select: none;
+    min-height: 870px;
+    width: 500px;
+    @extend .mAuto;
+}
+.bannerContainer {
+    height: 160px;
+    @extend .wFull;
+    @extend .fcc;
+}
+.bannerContainer img {
+    margin-top: 14px;
+    width: 118%;
+}
+/* Login switch
+---------------------------------------- */
+.loginFirstStep {
+    display: block;
+}
+.loginSecondStep {
+    display: none;
+}
+.registerFirstStep {
+    display: none;
+}
+/* Login first step
+---------------------------------------- */
+.loginSwitchArea {
+    width: 350px;
+    @extend .hAuto;
+    @extend .mAuto;
+}
+.mainLogoArea {
+    margin: -8px auto auto auto;
+    width: 100%;
+    height: auto;
+}
+.mainLogo {
+    @extend .fcc;
+}
+.mainLogo img {
+    height: 56px;
+}
+.mainSlogan {
+    width: 100%;
+    @extend .fcc;
+}
+.mainSlogan p {
+    color: var(--blue-main);
+    margin-top: 4px;
+    @extend .sb14;
+}
+.cardsArea {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px auto auto auto;
+    column-gap: 10px;
+    display: grid;
+    width: 350px;
+    height: 80px;
+}
+.bannerCard {
+    background-color: var(--blue-lightest);
+    grid-template-rows: repeat(2, 1fr);
+    border-radius: 8px;
+    display: grid;
+}
+.cardLogoArea {
+    @extend .fcc;
+}
+.cardLogoArea img {
+    margin-top: 2px;
+    height: 22px;
+}
+.cardText {
+    text-align: center;
+    margin: 0px 12px;
+    @extend .sb10;
+}
+.mainTitle {
+    margin: 32px auto auto auto;
+    height: 20px;
+    @extend .lt18;
+    @extend .fcc;
+}
+.loginForm {
+    margin: 32px auto auto auto;
+    width: 350px;
+    @extend .hAuto;
+}
+.LFS-form {
+    @extend .hAuto;
+    @extend .wFull;
+}
+.normalForm {
+    border: 1px solid var(--gray-dark);
+    border-radius: 24px;
+    padding-left: 36px;
+    height: 40px;
+    @extend .darkgray;
+    @extend .no-out;
+    @extend .wFull;
+    @extend .lt14;
+    @extend .box;
+}
+.normalForm::placeholder {
+    color: var(--gray-darkest-sh);
+    @extend .lt14;
+}
+.normalForm:focus {
+    box-shadow: 0 0 0 3px var(--blue-lighter-sh);
+}
+.LFS-input-wrapper::before {
+    content: '';
+    background-image: url('/public/resources/files/users/login/mail-form-logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 15px 0px 0px 12px;
+    background-size: contain;
+    position: absolute;
+    border-radius: 2px;
+    height: 11px;
+    width: 15px;
+}
+.error-logo::after {
+    content: '';
+    background-image: url('/public/resources/files/users/login/warning.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 12px 0px 0px -26px;
+    background-size: 18px;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+}
+.warningError {
+    color: var(--red-darker);
+    margin-top: 6px;
+    display: none;
+    @extend .lt12;
+}
+.continueBtn {
+    background-color: var(--blue-main);
+    border-radius: 24px;
+    height: 44px;
+    @extend .no-bor;
+    @extend .no-out;
+    @extend .white;
+    @extend .point;
+    @extend .sb14;
+}
+.continueBtn:hover {
+    box-shadow: 2px 2px 8px 2px var(--blue-ligh-sh);
+    background-color: var(--blue-darkest);
+}
+.continueBtn:active {
+    box-shadow: 0 0 0 3px var(--blue-light-sh);
+}
+.LFS-continue {
+    margin-top: 14px;
+    @extend .wFull;
+}
+.noAccArea {
+    grid-template-rows: 1fr 1fr;
+    border-bottom: 1px solid var(--gray-main);
+    padding: 20px 0px;
+    display: grid;
+    height: 84px;
+    @extend .darkgray;
+    @extend .sb12;
+    @extend .box;
+    @extend .fcc;
+}
+.accAlternativesArea {
+    grid-template-rows: 2fr 5fr 2fr;
+    margin: 14px auto auto auto;
+    display: grid;
+    height: 118px;
+}
+.accAltTitleArea, .accAltHelpArea {
+    @extend .sb14;
+    @extend .fcc;
+}
+.accAltHelpArea {
+    width: 350px;
+    @extend .mAuto;
+    @extend .lt14;
+}
+.accAltLogoArea {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 8px;
+    display: grid;
+    @extend .mAuto;
+}
+.accAltLogo {
+    border-radius: 30px;
+    @extend .fcc;
+
+    &:hover {
+        box-shadow: 0px 0px 8px var(--gray-light-sh);
+    }
+
+    a {
+        height: 50px;
+    }
+
+    img {
+        height: 50px;
+    }
+}
+.accAltHelpText {
+    @extend .darkgray;
+    @extend .point;
+}
+/* Login second step
+---------------------------------------- */
+.LSS-backButton, .RFS-backButton {
+    background-color: var(--gray-light);
+    border-radius: 18px;
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    @extend .point;
+    @extend .fcc;
+
+    &::before {
+        content: '\f053';
+        @extend .darkgray;
+        @extend .fb16;
+    }
+
+    &:hover {
+        background-color: var(--gray-dark);
+    }
+
+    &:active {
+        scale: 0.95;
+    }
+}
+.LSS-mainTextArea {
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+    padding-top: 24px;
+    display: grid;
+    height: 150px;
+    width: 350px;
+}
+.LSS-mainTitle {
+    @extend .fb20;
+    @extend .blue;
+}
+.LSS-mainActionCall {
+    @extend .darkgray;
+    @extend .lt14;
+}
+.LSS-form {
+    width: 350px;
+    @extend .hAuto; 
+}
+.passForm {
+    @extend .wFull;
+}
+.LSS-input-wrapper::before {
+    content: '';
+    background-image: url('/public/resources/files/users/login/lock-logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 11px 0px 0px 12px;
+    background-size: 11px;
+    position: absolute;
+    border-radius: 2px;
+    height: 16px;
+    width: 13px;
+}
+.rememberMeDiv {
+    margin: 16px auto 16px 8px;
+    height: 20px;
+    width: 120px;
+    @extend .darkgray;
+    @extend .point;
+    @extend .sb12;
+    @extend .fcc;
+}
+.unchecked {
+    content: '';
+    border: 1px solid var(--blue-main);
+    border-radius: 12px;
+    margin-right: 8px;
+    height: 18px;
+    width: 18px;
+    @extend .back-white;
+    @extend .box;
+}
+.checked {
+    border: 1px solid var(--blue-main);
+    background-color: var(--blue-main);
+    border-radius: 12px;
+    margin-right: 8px;
+    height: 18px;
+    width: 18px;
+    @extend .sb10;
+    @extend .fcc;
+    @extend .box;
+    
+    &::before {
+        content: '\f00c';
+        @extend .white;
+        padding-bottom: 2px;
+    }
+
+    &:focus {
+        outline: 2px solid var(--blue-light-sh);
+    }
+}
+.rememberInfo {
+    margin-top: -10px;
+    position: absolute;
+    display: none;
+}
+.popupArrow::before {
+    content: "";
+    border-color: var(--gray-darker) transparent;
+    border-width: 0 9px 9px 9px;
+    border-style: solid;
+    margin-left: -4.5px;
+    position: absolute;
+    bottom: 77px;
+    left: 18%;
+}
+.popupArrow::after {
+    content: "";
+    border-color: white transparent;
+    border-width: 0 9px 9px 9px;
+    border-style: solid;
+    margin-left: -4.5px;
+    position: absolute;
+    bottom: 76px;
+    left: 18%;
+}
+.popupText {
+    box-shadow: 1px 1px 10px -4px var(--gray-darkest-sh);
+    border: 1px solid var(--gray-main);
+    background-color: white;
+    margin: 0 10px 0 10px;
+    border-radius: 8px;
+    padding: 12px;
+    height: 77px;
+    width: 250px;
+    @extend .darkgray;
+    @extend .lt12;
+    @extend .box;
+}
+.LSS-continue {
+    margin-top: 2px;
+    @extend .wFull;
+}
+.LSS-forgotPass {
+    margin-bottom: 10px;
+    height: 64px;
+    @extend .fcc;
+
+    p {
+        @extend .point;
+        @extend .blue;
+        @extend .sb14;
+    }
+}
+/* Register second step
+---------------------------------------- */
+.RFS-mainTextArea {
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+    padding-top: 20px;
+    display: grid;
+    height: 175px;
+    width: 350px;
+    @extend .box;
+}
+.RFS-mainTitle {
+    @extend .fb20;
+    @extend .blue;
+}
+.RFS-mainActionCall {
+    @extend .darkgray;
+    @extend .lt14;
+}
+.RFS-mainAccountEmail {
+    padding-top: 10px;
+}
+.RFS-form {
+    width: 350px;
+    @extend .mAuto;
+    @extend .hAuto;
+}
+.RFS-input-wrapper-2,
+.RFS-input-wrapper-3,
+.RFS-input-wrapper-4,
+.RFS-input-wrapper-5 {
+    margin-top: 15px;
+}
+.RFS-input-wrapper-1::before,
+.RFS-input-wrapper-2::before,
+.RFS-input-wrapper-3::before {
+    content: '';
+    background-image: url('/public/resources/files/users/login/user-logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 12px 0px 0px 14px;
+    background-size: 16px;
+    position: absolute;
+    border-radius: 2px;
+    height: 15px;
+    width: 13px;
+}
+.RFS-input-wrapper-4::before, .RFS-input-wrapper-5::before {
+    content: '';
+    background-image: url('/public/resources/files/users/login/lock-logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 11px 0px 0px 12px;
+    background-size: 11px;
+    position: absolute;
+    border-radius: 2px;
+    height: 16px;
+    width: 13px;
+}
+.RFS-continue {
+    margin-top: 14px;
+    @extend .wFull;
+}
+/*
+---------------------------------------- */
+.termsAgreeArea {
+    margin-bottom: 6px;
+}
+.termsDiv {
+    grid-template-columns: 1fr 8fr;
+    column-gap: 12px;
+    display: grid;
+    @extend .point;
+
+    button {
+        margin: auto
+    }
+
+    p {
+        @extend .darkgray;
+        @extend .lt12;
+    }
+}
+.terms-2 {
+    margin-top: 12px;
+}
+/*
+---------------------------------------- */ 
+.footerLine {
+    margin-bottom: 4px;
+    position: absolute;
+    position: fixed;
+    bottom: 0px;
+    @extend .wFull;
+}
+.footerLinksArea {
+    width: 500px;
+    gap: 12px;
+    @extend .darkgray;
+    @extend .mAuto;
+    @extend .lt12;
+    @extend .fcc;
+
+    p {
+        color: var(--gray-darkest);
+        @extend .link;
+    }
+}

@@ -1,0 +1,169 @@
+/* Sass needed libraries
+---------------------------------------- */
+@use '../../css/common/components';
+/* Font Awesome 5 Free
+---------------------------------------- */
+::before, ::after {
+    font-family: 'Icons Pack';
+}
+/*
+---------------------------------------- */
+b {
+    font-weight: 500;
+    @extend .black;
+}
+/*
+---------------------------------------- */
+.subscriptions-area {
+    width: 100%;
+    height: auto;
+    margin: 0px 0px auto 0px;
+    @extend .back-white;
+    border: 1px solid var(--gray-light-sh);
+    box-shadow: 0 0 16px var(--gray-lighter-sh);
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    &__title {
+        height: 50px;
+        margin: 0px 12px;
+        @extend .fcs;
+        @extend .lt18;
+        border-bottom: 1px solid var(--gray-light);
+    }
+
+    &__cards {
+        padding: 24px;
+        @extend .fcs;
+        flex-direction: column;
+        gap: 24px;
+        
+        
+
+        .sub-card {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 14fr;
+            height: 64px;
+            border-radius: 8px;
+            
+            
+
+            &__logo {
+                background-color: var(--gray-lighter);
+                border-top: 2px solid white;
+                border-bottom: 2px solid white;
+                @extend .box;
+                @extend .fcc;
+                
+
+                &::before {
+                    color: var(--blue-light);
+                }
+            }
+
+            .newsletter::before {
+                content: '\E626';
+                font-size: 30px;
+            }
+
+            .feedback::before {
+                content: '\E671';
+                font-size: 30px;
+            }
+
+            .promos::before {
+                content: '\E605';
+                font-size: 34px;
+            }
+
+            .shoppingCart::before {
+                content: '\E610';
+                font-size: 28px;
+            }
+
+            .favorites::before {
+                content: '\E62A';
+                font-size: 28px;
+            }
+
+            .recommended::before {
+                content: '\E65B';
+                font-size: 32px;
+            }
+
+            .offers::before {
+                content: '\E6DD';
+                font-size: 24px;
+            }
+
+            .research::before {
+                content: '\E667';
+                font-size: 28px;
+            }
+
+            &__title {
+                position: relative;
+                border-radius: 6px;
+                @extend .fsc;
+                flex-direction: column;
+                @extend .lt16;
+                border: 5px solid white;
+                box-shadow: 1px 1px 3px var(--gray-light-sh);
+                border: 1px solid var(--gray-light);
+                @extend .point;
+                gap: 4px;
+                padding: 12px;
+
+                &::after {
+                    content: '\E61F';
+                    position: absolute;
+                    right: 12px;
+                    @extend .gray;
+                }
+
+                
+                label {
+                    @extend .lt12;
+                    @extend .darkgray;
+                    @extend .fcc;
+                    gap: 6px;
+                    @extend .point;
+                   
+
+                    input {
+                        padding-top: 2px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__button {
+        width: 100%;
+        @extend .fcc;
+        padding: 6px 24px 24px 24px;
+        @extend .box;
+
+        button {
+            @extend .no-bor;
+            @extend .no-out;
+            background-color: var(--blue-main);
+            padding: 8px 32px;
+            @extend .white;
+            border-radius: 4px;
+            @extend .lt14;
+            @extend .point;
+
+            &:hover {
+                background-color: var(--blue-darkest);
+            }
+
+            &:active {
+                scale: 0.95;
+            }
+        }
+    }
+}
+/*
+---------------------------------------- */

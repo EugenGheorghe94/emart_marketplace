@@ -1,0 +1,429 @@
+/* Sass needed libraries
+---------------------------------------- */
+@use '../../common/components';
+/* Body reserves space for scroll
+---------------------------------------- */
+body {
+    overflow-y: scroll;
+}
+/* Font Awesome 5 Free
+---------------------------------------- */
+::before, ::after {
+    font-family: 'Font Awesome 5 Free';
+}
+/* Font Awesome 5 Free
+---------------------------------------- */
+b {
+    font-weight: 500;
+    color: black;
+}
+/* Top spacer element
+---------------------------------------- */
+.topSpaceElement {
+    height: 64px;
+    @extend .wFull;
+}
+/* Page title elment
+---------------------------------------- */
+.pageTitle {
+    margin: 32px;
+    @extend .wAuto;
+    @extend .blue;
+    @extend .lt24;
+    @extend .box;
+}
+/* 
+---------------------------------------- */
+.mainPageSection {
+    background-color: var(--gray-light);
+    height: auto;
+}
+/* Main
+---------------------------------------- */
+.mainSection {
+    @extend .back-white;
+    height: auto;
+    margin: 24px;
+    border: 1px solid var(--gray-light-sh);
+    box-shadow: 0 0 16px var(--gray-lighter-sh);
+    border-radius: 8px;
+    @extend .box;
+    padding: 16px;
+}
+
+.shipping-empty {
+    height: auto;
+    @extend .fcc;
+    flex-direction: column;
+    padding: 32px;
+    @extend .box;
+
+    span {
+        width: 200px;
+        height: 200px;
+        background-image: url('/public/resources/files/users/shipping.svg');
+        margin-bottom: 64px;
+    }
+
+    p:nth-Child(2) {
+        width: 350px;
+        height: auto;
+        text-align: center;
+        @extend .lt16;
+    }
+
+    p:nth-Child(3) {
+        width: 350px;
+        height: auto;
+        text-align: center;
+        @extend .th13;
+        @extend .darkgray;
+    }
+
+    a {
+        @extend .lt14;
+        padding: 6px 16px;
+        @extend .blue;
+        @extend .point;
+        border-radius: 8px;
+
+        &:hover {
+            background-color: var(--blue-lightest);
+        }
+
+        &:active {
+            scale: 0.97;
+        }
+    }
+}
+/* Courier popup
+---------------------------------------- */
+.courier-overlay {
+    background-color: var(--gray-light-sh);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    @extend .wFull;
+    @extend .hFull;
+
+    .courier-modal {
+        box-shadow: 0 0 24px var(--gray-light-sh);
+        grid-template-rows: auto auto;
+        border: 1px solid var(--gray-main);
+        margin: 100px auto auto auto;
+        border-radius: 8px;
+        display: grid;
+        height: auto;
+        width: 400px;
+        @extend .back-white;
+        @extend .box;
+    }
+    body.showFeedback {
+        overflow: hidden;
+    }
+    .courier-title {
+        height: 50px;
+        border-bottom: 1px solid var(--gray-main);
+        padding: 0px 0px 0px 12px;
+        margin: 0px 12px;
+        @extend .black;
+        @extend .fbtw;
+        @extend .sb18;
+        @extend .box;
+    }
+    .closeButton {
+        background-color: transparent;
+        color: var(--gray-main);
+        @extend .no-out;
+        @extend .no-bor;
+        @extend .point;
+        @extend .sb18;
+    }
+    .closeButton::before {
+        content: '\f00d';
+    }
+    .closeButton:hover {
+        @extend .blue;
+    }
+
+    .courierForm {
+        padding: 16px;
+        @extend .fsc;
+        flex-direction: column;
+
+        label {
+            @extend .fsc;
+            flex-direction: column;
+            margin-bottom: 16px;
+            width: 100%;
+            @extend .lt14;
+            @extend .black;
+
+            input, select {
+                height: 32px;
+                @extend .box;
+                width: 100%;
+                border: 1px solid var(--gray-dark);
+                border-radius: 6px;
+                margin-top: 6px;
+                @extend .no-out;
+                padding: 0px 12px;
+                @extend .back-white;
+
+                &::placeholder {
+                    @extend .gray;
+                }
+
+                &:focus {
+                    border: 1px solid var(--blue-lighter);
+                    box-shadow: 0 0 0 2px var(--blue-lighter-sh);
+                }
+            }
+            
+            select {
+                @extend .gray;
+                
+                option {
+                    @extend .black;
+                }
+
+                &:focus {
+                    border: 1px solid var(--blue-lighter);
+                    box-shadow: 0 0 0 2px var(--blue-lighter-sh);
+                }
+            }
+        }
+
+        .required {
+            border: 1px solid var(--red-main);
+            box-shadow: 0 0 0 2px var(--red-lighter-sh);
+        }
+    }
+
+    .submitCourier {
+        height: 32px;
+        width: 150px;
+        margin: 0px 16px 16px auto;
+        @extend .no-bor;
+        @extend .no-out;
+        background-color: var(--blue-main);
+        @extend .white;
+        border-radius: 6px;
+        @extend .sb14;
+        @extend .point;
+
+        &:hover {
+            background-color: var(--blue-darkest);
+        }
+
+        &:active {
+            scale: 0.97;
+        }
+    }
+}
+
+
+
+/* Feedback link
+---------------------------------------- */
+.feedbackLink {
+    width: fit-content;
+    margin: 0px 32px;
+    @extend .point;
+    @extend .lt12;
+    @extend .fcs;
+}
+.feedbackLink p:nth-child(1)::before {
+    content: '\f005';
+    margin-right: 4px;
+    font-weight: 100;
+}
+.feedbackLink:hover p:nth-child(2) {
+    text-decoration: underline;
+}
+.feedbackLink:hover p:nth-child(1)::before {
+    font-weight: 900;
+}
+/* Feedback modal
+---------------------------------------- */
+.feedback-overlay {
+    background-color: var(--gray-light-sh);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    @extend .wFull;
+    @extend .hFull;
+}
+.feedback-modal {
+    box-shadow: 0 0 24px var(--gray-light-sh);
+    grid-template-rows: 1fr auto 2.5fr 1fr;
+    border: 1px solid var(--gray-main);
+    margin: 100px auto auto auto;
+    border-radius: 8px;
+    display: grid;
+    height: 260px;
+    width: 500px;
+    @extend .back-white;
+    @extend .box;
+}
+body.showFeedback {
+    overflow: hidden;
+}
+.feedback-title {
+    border-bottom: 1px solid var(--gray-main);
+    padding: 0px 0px 0px 12px;
+    margin: 0px 12px;
+    @extend .black;
+    @extend .fbtw;
+    @extend .sb18;
+    @extend .box;
+}
+.closeButton {
+    background-color: transparent;
+    color: var(--gray-main);
+    @extend .no-out;
+    @extend .no-bor;
+    @extend .point;
+    @extend .sb18;
+}
+.closeButton::before {
+    content: '\f00d';
+}
+.closeButton:hover {
+    @extend .blue;
+}
+.modalDisclaimer {
+    grid-template-rows: 1fr 1fr;
+    margin: 12px 12px;
+    display: grid;
+    @extend .darkgray;
+    @extend .hAuto;
+    @extend .lt12;
+}
+.modalDisclaimer div:nth-child(1)::before {
+    content: '\f0f3';
+    margin-right: 4px;
+    color: var(--yellow-main);
+    font-weight: 900;
+}
+.emoji-area {
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 12px;
+    display: grid;
+    margin: auto;
+    width: 90%; 
+}
+.emoji {
+    color: var(--gray-light);
+    font-size: 64px;
+    @extend .point;
+    @extend .fcc;
+}
+.face-1::before {
+    content: '\f556';
+}
+.face-2::before {
+    content: '\f119';  
+}
+.face-3::before {
+    content: '\f11a';  
+}
+.face-4::before {
+    content: '\f118';
+}
+.face-5::before {
+    content: '\f5b8';
+}
+.face-1:hover {
+    color: var(--red-main);
+}
+.face-2:hover {
+    color: var(--yellow-dark);
+}
+.face-3:hover {
+    color: var(--yellow-main);
+}
+.face-4:hover {
+    color: var(--green-main);
+}
+.face-5:hover {
+    @extend .blue;
+}
+.closeWithoutFeedback {
+    border-top: 1px dotted var(--gray-main);
+    background-color: var(--gray-lighter);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 0px 12px;
+    @extend .lt12;
+    @extend .fcs;
+}
+.closeWithoutFeedback button {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: var(--blue-light);
+    border-radius: 4px;
+    padding: 4px 8px;
+    @extend .no-out;
+    @extend .no-bor;
+    @extend .point;
+    @extend .box;
+}
+.closeWithoutFeedback button::before {
+    content: '\f00d';
+    color: var(--red-main);
+    margin-right: 6px;
+    font-weight: 900;
+    padding-top: 1px;
+}
+.closeWithoutFeedback button:hover {
+    background-color: var(--blue-lightest);
+    border: 1px solid var(--blue-light);
+}
+/* Notification modal
+---------------------------------------- */
+.notification {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    border-left: 12px solid currentColor;
+    outline: 1px dotted var(--gray-dark);
+    transition: right 0.6s;
+    pointer-events: none;
+    border-radius: 12px;
+    padding: 16px 32px;
+    position: fixed;
+    right: -300px;
+    bottom: 16px;
+    width: 200px;
+    height: 80px;
+    @extend .back-white;
+    @extend .box;
+}
+.success {
+    color: var(--green-dark);
+}
+.error {
+    color: var(--red-dark);
+}
+.notification p:nth-child(1) {
+    color: currentColor;
+    margin-bottom: 4px;
+    @extend .wAuto;
+    @extend .hAuto;
+    @extend .sb20;
+    @extend .fss;
+}
+.notification p:nth-child(2) {
+    @extend .darkgray;
+    @extend .lt12;
+    @extend .fcs;
+}

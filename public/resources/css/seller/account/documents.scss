@@ -1,0 +1,497 @@
+/* Sass needed libraries
+---------------------------------------- */
+@use '../../common/components';
+/* Body reserves space for scroll
+---------------------------------------- */
+body {
+    overflow-y: scroll;
+}
+/* Font Awesome 5 Free
+---------------------------------------- */
+::before, ::after {
+    font-family: 'Font Awesome 5 Free';
+}
+/* Font Awesome 5 Free
+---------------------------------------- */
+b {
+    font-weight: 500;
+    color: black;
+}
+/* Top spacer element
+---------------------------------------- */
+.topSpaceElement {
+    height: 64px;
+    @extend .wFull;
+}
+/* Page title elment
+---------------------------------------- */
+.pageTitle {
+    margin: 32px;
+    @extend .wAuto;
+    @extend .blue;
+    @extend .lt24;
+    @extend .box;
+}
+/* 
+---------------------------------------- */
+.mainPageSection {
+    background-color: var(--gray-light);
+    height: auto;
+}
+/* 
+---------------------------------------- */
+.pageBanners {
+    @extend .wAuto;
+    height: 90px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 16px;
+    margin: 0px 24px;
+}
+.banner {
+    @extend .back-white;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid var(--gray-light-sh);
+    box-shadow: 0 0 16px var(--gray-lighter-sh);
+    @extend .box;
+    border-radius: 8px;
+    @extend .point;
+}
+.banner:hover {
+    @extend .blue;
+    border: 1px solid var(--blue-main);
+}
+.notifiNumber {
+    font-size: 48px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+.notifiTextArea {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-darkest);
+}
+/* 
+---------------------------------------- */
+.pageContainter {
+    margin: 24px;
+    padding: 24px;
+    @extend .back-white;
+    border-radius: 8px;
+    border: 1px solid var(--gray-light-sh);
+    box-shadow: 0 0 16px var(--gray-lighter-sh);
+    @extend .box;
+}
+.blueSection {
+    @extend .back-white;
+    box-sizing: border-box;
+    border: 1px solid var(--blue-main);
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.152);
+}
+.blueSectionTitle {
+    background-color: var(--blue-main);
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    position: relative;
+    z-index: 1;
+}
+.blueTitle {
+    padding: 0px 16px;
+}
+/* Top sticky
+---------------------------------------- */
+.topBars {
+    background-color: var(--gray-light);
+    width: auto;
+    height: auto;
+    position: sticky;
+    top: 64px;
+    z-index: 0;
+}
+/* Top section with buttons
+---------------------------------------- */
+.topButtonArea {
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border-bottom: 1px solid var(--gray-dark);
+}
+.topButton {
+    height: 30px;
+    font-size: 14px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 6px;
+    @extend .no-out;
+    @extend .no-bor;
+}
+.blue-button:before {
+    content: '\f019';
+    margin-right: 6px;
+    font-weight: 900;
+}
+.blue-button {
+    background-color: var(--blue-main);
+}
+.blue-button:hover {
+    background-color: var(--blue-darker);
+}
+.red-button:before {
+    content: '\f05e';
+    margin-right: 6px;
+    font-weight: 900;
+}
+.red-button {
+    background-color: var(--red-dark);
+}
+.red-button:hover {
+    background-color: var(--red-darker);
+}
+/* Top table area
+---------------------------------------- */
+.topSectionArea {
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr 1.2fr 0.9fr 2.5fr 2.2fr 2fr 1.5fr 1fr 1.5fr;
+    border-bottom: 1px solid var(--gray-dark);
+}
+.masterCheck::before {
+    content: '\f0c8';
+    @extend .blue;
+    @extend .lt16;
+}
+.section, .last-section {
+    height: 40px;
+    @extend .fcc;
+    @extend .sb14;
+    @extend .darkgray;
+}
+.section {
+    border-right: 1px solid var(--gray-dark);
+}
+/* Documents
+---------------------------------------- */
+.documents-area {
+    height: auto;
+    background-color: white;
+
+    &__row {
+        height: 50px;
+        display: grid;
+        grid-template-columns: minmax(0, .3fr) minmax(0, 0.7fr) minmax(0, 1.2fr) minmax(0, 0.9fr) minmax(0, 2.5fr) minmax(0, 2.2fr) minmax(0, 2fr) minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1.5fr);
+        border-bottom: 1px dotted var(--gray-main);
+
+        .check {
+            @extend .blue;
+            @extend .fcc;
+            
+            &::before {
+                content: '\f0c8'
+            }
+        }
+
+        .stdTextCenter, .stdDate {
+            margin: auto 0px;
+            text-align: center;
+            padding: 0px 12px;
+            @extend .box;
+            @extend .darkgray;
+            @extend .lt14;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        
+        .cell {
+            border-right: 1px dotted var(--gray-main);
+        }
+
+        .stdLabel {
+                @extend .fcc;
+           
+            span {
+                border: 2px solid currentColor;
+                border-radius: 20px;
+                padding: 2px 10px;
+                margin: auto;
+                @extend .hAuto;
+                @extend .wAuto;
+                @extend .point;
+                @extend .sb12;
+            }
+        }
+
+        .actionButton {
+            background-color: var(--blue-main);
+            border-radius: 4px;
+            padding: 6px 12px;
+            margin: auto;
+            @extend .white;
+            @extend .hAuto;
+            @extend .wAuto;
+            @extend .point;
+            @extend .lt14;
+            @extend .fcc;
+        
+            &::before {
+                content: '\f044';
+                margin-right: 8px;
+                font-weight: 900;
+            }
+
+            &:hover {
+                background-color: var(--blue-darkest);
+            }
+
+        }
+
+        .stdDate:before {
+            content: '\f133';
+            margin-right: 8px;
+            @extend .lt16;
+            @extend .black;
+        }
+    }
+
+    .row-1 {
+        background-color: white;
+    }
+
+    .row-2 {
+        background-color: var(--gray-lighter);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Feedback link
+---------------------------------------- */
+.feedbackLink {
+    width: fit-content;
+    margin: 0px 32px;
+    @extend .point;
+    @extend .lt12;
+    @extend .fcs;
+}
+.feedbackLink p:nth-child(1)::before {
+    content: '\f005';
+    margin-right: 4px;
+    font-weight: 100;
+}
+.feedbackLink:hover p:nth-child(2) {
+    text-decoration: underline;
+}
+.feedbackLink:hover p:nth-child(1)::before {
+    font-weight: 900;
+}
+/* Feedback modal
+---------------------------------------- */
+.feedback-overlay {
+    background-color: var(--gray-light-sh);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    @extend .wFull;
+    @extend .hFull;
+}
+.feedback-modal {
+    box-shadow: 0 0 24px var(--gray-light-sh);
+    grid-template-rows: 1fr auto 2.5fr 1fr;
+    border: 1px solid var(--gray-main);
+    margin: 100px auto auto auto;
+    border-radius: 8px;
+    display: grid;
+    height: 260px;
+    width: 500px;
+    @extend .back-white;
+    @extend .box;
+}
+body.showFeedback {
+    overflow: hidden;
+}
+.feedback-title {
+    border-bottom: 1px solid var(--gray-main);
+    padding: 0px 0px 0px 12px;
+    margin: 0px 12px;
+    @extend .black;
+    @extend .fbtw;
+    @extend .sb18;
+    @extend .box;
+}
+.closeButton {
+    background-color: transparent;
+    color: var(--gray-main);
+    @extend .no-out;
+    @extend .no-bor;
+    @extend .point;
+    @extend .sb18;
+}
+.closeButton::before {
+    content: '\f00d';
+}
+.closeButton:hover {
+    @extend .blue;
+}
+.modalDisclaimer {
+    grid-template-rows: 1fr 1fr;
+    margin: 12px 12px;
+    display: grid;
+    @extend .darkgray;
+    @extend .hAuto;
+    @extend .lt12;
+}
+.modalDisclaimer div:nth-child(1)::before {
+    content: '\f0f3';
+    margin-right: 4px;
+    color: var(--yellow-main);
+    font-weight: 900;
+}
+.emoji-area {
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 12px;
+    display: grid;
+    margin: auto;
+    width: 90%; 
+}
+.emoji {
+    color: var(--gray-light);
+    font-size: 64px;
+    @extend .point;
+    @extend .fcc;
+}
+.face-1::before {
+    content: '\f556';
+}
+.face-2::before {
+    content: '\f119';  
+}
+.face-3::before {
+    content: '\f11a';  
+}
+.face-4::before {
+    content: '\f118';
+}
+.face-5::before {
+    content: '\f5b8';
+}
+.face-1:hover {
+    color: var(--red-main);
+}
+.face-2:hover {
+    color: var(--yellow-dark);
+}
+.face-3:hover {
+    color: var(--yellow-main);
+}
+.face-4:hover {
+    color: var(--green-main);
+}
+.face-5:hover {
+    @extend .blue;
+}
+.closeWithoutFeedback {
+    border-top: 1px dotted var(--gray-main);
+    background-color: var(--gray-lighter);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 0px 12px;
+    @extend .lt12;
+    @extend .fcs;
+}
+.closeWithoutFeedback button {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: var(--blue-light);
+    border-radius: 4px;
+    padding: 4px 8px;
+    @extend .no-out;
+    @extend .no-bor;
+    @extend .point;
+    @extend .box;
+}
+.closeWithoutFeedback button::before {
+    content: '\f00d';
+    color: var(--red-main);
+    margin-right: 6px;
+    font-weight: 900;
+    padding-top: 1px;
+}
+.closeWithoutFeedback button:hover {
+    background-color: var(--blue-lightest);
+    border: 1px solid var(--blue-light);
+}
+/* Notification modal
+---------------------------------------- */
+.notification {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    border-left: 12px solid currentColor;
+    outline: 1px dotted var(--gray-dark);
+    transition: right 0.6s;
+    pointer-events: none;
+    border-radius: 12px;
+    padding: 16px 32px;
+    position: fixed;
+    right: -300px;
+    bottom: 16px;
+    width: 200px;
+    height: 80px;
+    @extend .back-white;
+    @extend .box;
+}
+.success {
+    color: var(--green-dark);
+}
+.error {
+    color: var(--red-dark);
+}
+.notification p:nth-child(1) {
+    color: currentColor;
+    margin-bottom: 4px;
+    @extend .wAuto;
+    @extend .hAuto;
+    @extend .sb20;
+    @extend .fss;
+}
+.notification p:nth-child(2) {
+    @extend .darkgray;
+    @extend .lt12;
+    @extend .fcs;
+}

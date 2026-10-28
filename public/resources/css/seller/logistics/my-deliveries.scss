@@ -1,0 +1,30 @@
+/* 
+---------------------------------------- */
+.mB-1::before  {
+    content: '\f019';
+    font-size: 14px;
+}
+.mB-2::before {
+    content: '\f0ce';
+    font-size: 14px;
+}
+/* 
+---------------------------------------- */
+.tableTitle {
+    grid-template-columns: 0.2fr 1fr 1.2fr 1fr 1fr 1fr 1fr 1fr 1.5fr 0.9fr 0.9fr;
+}
+/* 
+---------------------------------------- */
+.productContainer {
+    grid-template-columns: 0.2fr 1fr 1.2fr 1fr 1fr 1fr 1fr 1fr 1.5fr 0.9fr 0.9fr;
+}
+/* 
+---------------------------------------- */
+.aB-1::before {
+    content: '\f019';
+    font-size: 14px;
+}
+.aB-2::before {
+    content: '\f1da';
+    font-size: 14px;
+}

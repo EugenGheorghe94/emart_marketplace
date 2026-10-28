@@ -1,0 +1,40 @@
+/* 
+---------------------------------------- */
+.stockPriceRows input {
+    width: 75px;
+}
+/* 
+---------------------------------------- */
+.mB-1::before  {
+    content: '\f019';
+    font-size: 14px;
+}
+.mB-2::before {
+    content: '\f093';
+    font-size: 14px;
+}
+/* 
+---------------------------------------- */
+.tableTitle {
+    grid-template-columns: 0.3fr 1fr 5fr 1.2fr 1.8fr 3fr 1.6fr;
+}
+/* 
+---------------------------------------- */
+.productContainer {
+    grid-template-columns: 0.3fr 1fr 5fr 1.2fr 1.8fr 3fr 1.6fr;
+}
+/* 
+---------------------------------------- */
+.aB-1::before {
+    content: '\f0c5';
+    font-size: 14px;
+    font-weight: 100;
+    padding-right: 2px;
+}
+.aB-2::before {
+    content: '\f004';
+    font-size: 14px;
+    font-weight: 100;
+}
+/* 
+---------------------------------------- */

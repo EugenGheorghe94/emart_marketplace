@@ -1,0 +1,874 @@
+{
+  "_fonts-DqppEDJS.css": {
+    "file": "assets/fonts-DqppEDJS.css",
+    "src": "_fonts-DqppEDJS.css"
+  },
+  "_instrument-sans-400-normal-D1W7dsQl.woff": {
+    "file": "assets/instrument-sans-400-normal-D1W7dsQl.woff",
+    "src": "_instrument-sans-400-normal-D1W7dsQl.woff"
+  },
+  "_instrument-sans-400-normal-DRC__1Mx.woff2": {
+    "file": "assets/instrument-sans-400-normal-DRC__1Mx.woff2",
+    "src": "_instrument-sans-400-normal-DRC__1Mx.woff2"
+  },
+  "_instrument-sans-500-normal-Dk9ku72i.woff2": {
+    "file": "assets/instrument-sans-500-normal-Dk9ku72i.woff2",
+    "src": "_instrument-sans-500-normal-Dk9ku72i.woff2"
+  },
+  "_instrument-sans-500-normal-Z6ESRlEs.woff": {
+    "file": "assets/instrument-sans-500-normal-Z6ESRlEs.woff",
+    "src": "_instrument-sans-500-normal-Z6ESRlEs.woff"
+  },
+  "_instrument-sans-600-normal-B7fBEWYG.woff2": {
+    "file": "assets/instrument-sans-600-normal-B7fBEWYG.woff2",
+    "src": "_instrument-sans-600-normal-B7fBEWYG.woff2"
+  },
+  "_instrument-sans-600-normal-B9e8oLYv.woff": {
+    "file": "assets/instrument-sans-600-normal-B9e8oLYv.woff",
+    "src": "_instrument-sans-600-normal-B9e8oLYv.woff"
+  },
+  "public/fonts/OpenSans/OpenSans-Italic-VariableFont_wdth,wght.woff2": {
+    "file": "assets/OpenSans-Italic-VariableFont_wdth_wght-DtvUKzPo.woff2",
+    "src": "public/fonts/OpenSans/OpenSans-Italic-VariableFont_wdth,wght.woff2"
+  },
+  "public/fonts/OpenSans/OpenSans-VariableFont_wdth,wght.woff2": {
+    "file": "assets/OpenSans-VariableFont_wdth_wght-B73aTk82.woff2",
+    "src": "public/fonts/OpenSans/OpenSans-VariableFont_wdth,wght.woff2"
+  },
+  "public/fonts/new-icons.woff2": {
+    "file": "assets/new-icons-CvHgcCkQ.woff2",
+    "src": "public/fonts/new-icons.woff2"
+  },
+  "public/resources/components/css/client-account-side-menu.scss": {
+    "file": "assets/client-account-side-menu-C0c0Wsou.css",
+    "name": "client-account-side-menu",
+    "names": [
+      "client-account-side-menu.css"
+    ],
+    "src": "public/resources/components/css/client-account-side-menu.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/user-sidebar-icon-orders-C_AISzVC.svg",
+      "assets/user-sidebar-icon-vouchers-BvV4tI1t.svg",
+      "assets/user-sidebar-icon-wallet-BrOG-9MV.svg",
+      "assets/dana-icon-chat-DmhLiHBL.svg"
+    ]
+  },
+  "public/resources/components/css/dynamic-seller-page-view.scss": {
+    "file": "assets/dynamic-seller-page-view-CdBkltwf.css",
+    "name": "dynamic-seller-page-view",
+    "names": [
+      "dynamic-seller-page-view.css"
+    ],
+    "src": "public/resources/components/css/dynamic-seller-page-view.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/loader-BpP4stBE.gif"
+    ]
+  },
+  "public/resources/components/css/header-footer-client.scss": {
+    "file": "assets/header-footer-client-CJsTeGHb.css",
+    "name": "header-footer-client",
+    "names": [
+      "header-footer-client.css"
+    ],
+    "src": "public/resources/components/css/header-footer-client.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/ic-sell-button-header-BS02FAoI.svg",
+      "assets/sell-on-emart-CxHdzWT0.avif",
+      "assets/prod-card-DLjlHQNh.svg",
+      "assets/user-wallet-B08bGmAx.png",
+      "assets/loader-BpP4stBE.gif"
+    ]
+  },
+  "public/resources/components/css/header-footer-seller.scss": {
+    "file": "assets/header-footer-seller-CMmdgRLg.css",
+    "name": "header-footer-seller",
+    "names": [
+      "header-footer-seller.css"
+    ],
+    "src": "public/resources/components/css/header-footer-seller.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/loader-BpP4stBE.gif"
+    ]
+  },
+  "public/resources/css/client/addresses-page.scss": {
+    "file": "assets/addresses-page-ieLQSHrd.css",
+    "name": "addresses-page",
+    "names": [
+      "addresses-page.css"
+    ],
+    "src": "public/resources/css/client/addresses-page.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/pickup_fav-BigBq8r2.svg",
+      "assets/shipping-BqQEVHnf.svg",
+      "assets/loader-BpP4stBE.gif"
+    ]
+  },
+  "public/resources/css/client/cards-page.scss": {
+    "file": "assets/cards-page-D6oeGEgX.css",
+    "name": "cards-page",
+    "names": [
+      "cards-page.css"
+    ],
+    "src": "public/resources/css/client/cards-page.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/cards-big-logo-Bhqo_jK2.png"
+    ]
+  },
+  "public/resources/css/client/checkout-page.scss": {
+    "file": "assets/checkout-page-dBGXpeej.css",
+    "name": "checkout-page",
+    "names": [
+      "checkout-page.css"
+    ],
+    "src": "public/resources/css/client/checkout-page.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/mastercard-BIfSuGXk.svg",
+      "assets/myaccount-market-research-DgogfnIb.svg"
+    ]
+  },
+  "public/resources/css/client/client-login.scss": {
+    "file": "assets/client-login-uixHI-gm.css",
+    "name": "client-login",
+    "names": [
+      "client-login.css"
+    ],
+    "src": "public/resources/css/client/client-login.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/mail-form-logo-D3oql1Ja.svg",
+      "assets/warning-DNr3xoXJ.svg",
+      "assets/lock-logo-CmrHSzA2.svg",
+      "assets/user-logo-DoHJIn6S.svg"
+    ]
+  },
+  "public/resources/css/client/home-page.scss": {
+    "file": "assets/home-page-DC0m5YUm.css",
+    "name": "home-page",
+    "names": [
+      "home-page.css"
+    ],
+    "src": "public/resources/css/client/home-page.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/user-wallet-B08bGmAx.png",
+      "assets/loader-BpP4stBE.gif",
+      "assets/shopping-bag-DRgi67Si.svg"
+    ]
+  },
+  "public/resources/css/client/invoices-page.scss": {
+    "file": "assets/invoices-page-B3EwEna5.css",
+    "name": "invoices-page",
+    "names": [
+      "invoices-page.css"
+    ],
+    "src": "public/resources/css/client/invoices-page.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/document-UXLIpR4z.svg"
+    ]
+  },
+  "public/resources/css/client/my-account.scss": {
+    "file": "assets/my-account-Dh0mbEq_.css",
+    "name": "my-account",
+    "names": [
+      "my-account.css"
+    ],
+    "src": "public/resources/css/client/my-account.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/icon_fav-DjK-qYiB.png",
+      "assets/shipping-BqQEVHnf.svg",
+      "assets/myaccount-empty-billing-CWbv8wSc.png",
+      "assets/myaccount-empty-cards-Pig_L62a.png",
+      "assets/myaccount-market-research-DgogfnIb.svg"
+    ]
+  },
+  "public/resources/css/client/orders-page.scss": {
+    "file": "assets/orders-page-DyzaSg_-.css",
+    "name": "orders-page",
+    "names": [
+      "orders-page.css"
+    ],
+    "src": "public/resources/css/client/orders-page.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/shopping-bag-DRgi67Si.svg",
+      "assets/loader-BpP4stBE.gif"
+    ]
+  },
+  "public/resources/css/client/premio-page.scss": {
+    "file": "assets/premio-page-D8jmf11V.css",
+    "name": "premio-page",
+    "names": [
+      "premio-page.css"
+    ],
+    "src": "public/resources/css/client/premio-page.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/piggy-CMkDhvu1.svg",
+      "assets/shipping-BqQEVHnf.svg",
+      "assets/shopping-bag-DRgi67Si.svg",
+      "assets/genius-banner-NC-Uackp.avif"
+    ]
+  },
+  "public/resources/css/client/prod-category.scss": {
+    "file": "assets/prod-category-CgdDMpH9.css",
+    "name": "prod-category",
+    "names": [
+      "prod-category.css"
+    ],
+    "src": "public/resources/css/client/prod-category.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/user-wallet-B08bGmAx.png",
+      "assets/loader-BpP4stBE.gif",
+      "assets/prod-card-DLjlHQNh.svg",
+      "assets/favorite-8nr0UfD1.bin"
+    ]
+  },
+  "public/resources/css/client/prod-listing.scss": {
+    "file": "assets/prod-listing-Bw1koSCf.css",
+    "name": "prod-listing",
+    "names": [
+      "prod-listing.css"
+    ],
+    "src": "public/resources/css/client/prod-listing.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/loader-BpP4stBE.gif",
+      "assets/user-wallet-B08bGmAx.png"
+    ]
+  },
+  "public/resources/css/client/returns-page.scss": {
+    "file": "assets/returns-page-BTBzxiNw.css",
+    "name": "returns-page",
+    "names": [
+      "returns-page.css"
+    ],
+    "src": "public/resources/css/client/returns-page.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/document-UXLIpR4z.svg",
+      "assets/loader-BpP4stBE.gif",
+      "assets/myaccount-market-research-DgogfnIb.svg"
+    ]
+  },
+  "public/resources/css/client/reviews-page.scss": {
+    "file": "assets/reviews-page-DofzjZZu.css",
+    "name": "reviews-page",
+    "names": [
+      "reviews-page.css"
+    ],
+    "src": "public/resources/css/client/reviews-page.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/myaccount-market-research-DgogfnIb.svg",
+      "assets/loader-BpP4stBE.gif"
+    ]
+  },
+  "public/resources/css/common/_components.scss": {
+    "file": "assets/_components-D7KmvXHj.css",
+    "name": "_components",
+    "names": [
+      "_components.css"
+    ],
+    "src": "public/resources/css/common/_components.scss",
+    "isEntry": true
+  },
+  "public/resources/css/common/variables.scss": {
+    "file": "assets/variables-gce2ktv3.css",
+    "name": "variables",
+    "names": [
+      "variables.css"
+    ],
+    "src": "public/resources/css/common/variables.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/OpenSans-VariableFont_wdth_wght-B73aTk82.woff2",
+      "assets/OpenSans-Italic-VariableFont_wdth_wght-DtvUKzPo.woff2",
+      "assets/new-icons-CvHgcCkQ.woff2"
+    ]
+  },
+  "public/resources/css/seller/academy.scss": {
+    "file": "assets/academy-x1XGuNl0.css",
+    "name": "messages",
+    "names": [
+      "academy.css",
+      "credits.css",
+      "payouts.css",
+      "interest.css",
+      "invoices.css",
+      "messages.css",
+      "campaigns.css",
+      "documents.css",
+      "importXLS.css",
+      "statement.css",
+      "notifications.css"
+    ],
+    "src": "public/resources/css/seller/academy.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/account/documents.scss": {
+    "file": "assets/documents-Bnw7kcn2.css",
+    "name": "documents",
+    "names": [
+      "documents.css"
+    ],
+    "src": "public/resources/css/seller/account/documents.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/account/newsletters.scss": {
+    "file": "assets/newsletters-BVsIMFbr.css",
+    "name": "newsletters",
+    "names": [
+      "newsletters.css"
+    ],
+    "src": "public/resources/css/seller/account/newsletters.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/account/profile.scss": {
+    "file": "assets/profile-CSq3vp8S.css",
+    "name": "profile",
+    "names": [
+      "profile.css"
+    ],
+    "src": "public/resources/css/seller/account/profile.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/account/rating.scss": {
+    "file": "assets/rating-DIOxD4VM.css",
+    "name": "rating",
+    "names": [
+      "rating.css"
+    ],
+    "src": "public/resources/css/seller/account/rating.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/ads/campaigns.scss": {
+    "file": "assets/academy-x1XGuNl0.css",
+    "name": "messages",
+    "names": [
+      "academy.css",
+      "credits.css",
+      "payouts.css",
+      "interest.css",
+      "invoices.css",
+      "messages.css",
+      "campaigns.css",
+      "documents.css",
+      "importXLS.css",
+      "statement.css",
+      "notifications.css"
+    ],
+    "src": "public/resources/css/seller/academy.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/ads/credits.scss": {
+    "file": "assets/academy-x1XGuNl0.css",
+    "name": "messages",
+    "names": [
+      "academy.css",
+      "credits.css",
+      "payouts.css",
+      "interest.css",
+      "invoices.css",
+      "messages.css",
+      "campaigns.css",
+      "documents.css",
+      "importXLS.css",
+      "statement.css",
+      "notifications.css"
+    ],
+    "src": "public/resources/css/seller/academy.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/ads/interest.scss": {
+    "file": "assets/academy-x1XGuNl0.css",
+    "name": "messages",
+    "names": [
+      "academy.css",
+      "credits.css",
+      "payouts.css",
+      "interest.css",
+      "invoices.css",
+      "messages.css",
+      "campaigns.css",
+      "documents.css",
+      "importXLS.css",
+      "statement.css",
+      "notifications.css"
+    ],
+    "src": "public/resources/css/seller/academy.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/campaigns/bundles.scss": {
+    "file": "assets/bundles-BY9A9AOG.css",
+    "name": "bundles",
+    "names": [
+      "bundles.css"
+    ],
+    "src": "public/resources/css/seller/campaigns/bundles.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/campaigns/campaigns.scss": {
+    "file": "assets/campaigns-D5ToYJ6B.css",
+    "name": "contact",
+    "names": [
+      "contact.css",
+      "campaigns.css"
+    ],
+    "src": "public/resources/css/seller/campaigns/campaigns.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/dashboard.scss": {
+    "file": "assets/dashboard-TdhULQ1M.css",
+    "name": "dashboard",
+    "names": [
+      "dashboard.css"
+    ],
+    "src": "public/resources/css/seller/dashboard.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/loader-BpP4stBE.gif",
+      "assets/warehouse-photo-BhOX5ql3.png"
+    ]
+  },
+  "public/resources/css/seller/financial/documents.scss": {
+    "file": "assets/academy-x1XGuNl0.css",
+    "name": "messages",
+    "names": [
+      "academy.css",
+      "credits.css",
+      "payouts.css",
+      "interest.css",
+      "invoices.css",
+      "messages.css",
+      "campaigns.css",
+      "documents.css",
+      "importXLS.css",
+      "statement.css",
+      "notifications.css"
+    ],
+    "src": "public/resources/css/seller/academy.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/financial/invoices.scss": {
+    "file": "assets/academy-x1XGuNl0.css",
+    "name": "messages",
+    "names": [
+      "academy.css",
+      "credits.css",
+      "payouts.css",
+      "interest.css",
+      "invoices.css",
+      "messages.css",
+      "campaigns.css",
+      "documents.css",
+      "importXLS.css",
+      "statement.css",
+      "notifications.css"
+    ],
+    "src": "public/resources/css/seller/academy.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/financial/payouts.scss": {
+    "file": "assets/academy-x1XGuNl0.css",
+    "name": "messages",
+    "names": [
+      "academy.css",
+      "credits.css",
+      "payouts.css",
+      "interest.css",
+      "invoices.css",
+      "messages.css",
+      "campaigns.css",
+      "documents.css",
+      "importXLS.css",
+      "statement.css",
+      "notifications.css"
+    ],
+    "src": "public/resources/css/seller/academy.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/financial/statement.scss": {
+    "file": "assets/academy-x1XGuNl0.css",
+    "name": "messages",
+    "names": [
+      "academy.css",
+      "credits.css",
+      "payouts.css",
+      "interest.css",
+      "invoices.css",
+      "messages.css",
+      "campaigns.css",
+      "documents.css",
+      "importXLS.css",
+      "statement.css",
+      "notifications.css"
+    ],
+    "src": "public/resources/css/seller/academy.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/fulfillment/calculator.scss": {
+    "file": "assets/calculator-BViMI3te.css",
+    "name": "calculator",
+    "names": [
+      "calculator.css"
+    ],
+    "src": "public/resources/css/seller/fulfillment/calculator.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/fulfillment/dashboard.scss": {
+    "file": "assets/dashboard-CSJMKmjy.css",
+    "name": "dashboard",
+    "names": [
+      "dashboard.css"
+    ],
+    "src": "public/resources/css/seller/fulfillment/dashboard.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/fulfillment/reception.scss": {
+    "file": "assets/reception-Dco5yQIM.css",
+    "name": "reception",
+    "names": [
+      "reception.css"
+    ],
+    "src": "public/resources/css/seller/fulfillment/reception.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/importXLS.scss": {
+    "file": "assets/academy-x1XGuNl0.css",
+    "name": "messages",
+    "names": [
+      "academy.css",
+      "credits.css",
+      "payouts.css",
+      "interest.css",
+      "invoices.css",
+      "messages.css",
+      "campaigns.css",
+      "documents.css",
+      "importXLS.css",
+      "statement.css",
+      "notifications.css"
+    ],
+    "src": "public/resources/css/seller/academy.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/logistics/courier-accounts.scss": {
+    "file": "assets/courier-accounts-eYhmVo6S.css",
+    "name": "courier-accounts",
+    "names": [
+      "courier-accounts.css"
+    ],
+    "src": "public/resources/css/seller/logistics/courier-accounts.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/logistics/my-deliveries.scss": {
+    "file": "assets/my-deliveries-Co_zp-Nd.css",
+    "name": "my-deliveries",
+    "names": [
+      "my-deliveries.css"
+    ],
+    "src": "public/resources/css/seller/logistics/my-deliveries.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/logistics/shipping-tax.scss": {
+    "file": "assets/shipping-tax-ElHUNHFf.css",
+    "name": "shipping-tax",
+    "names": [
+      "shipping-tax.css"
+    ],
+    "src": "public/resources/css/seller/logistics/shipping-tax.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/shipping-BqQEVHnf.svg"
+    ]
+  },
+  "public/resources/css/seller/messages/contact.scss": {
+    "file": "assets/campaigns-D5ToYJ6B.css",
+    "name": "contact",
+    "names": [
+      "contact.css",
+      "campaigns.css"
+    ],
+    "src": "public/resources/css/seller/campaigns/campaigns.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/messages/messages.scss": {
+    "file": "assets/academy-x1XGuNl0.css",
+    "name": "messages",
+    "names": [
+      "academy.css",
+      "credits.css",
+      "payouts.css",
+      "interest.css",
+      "invoices.css",
+      "messages.css",
+      "campaigns.css",
+      "documents.css",
+      "importXLS.css",
+      "statement.css",
+      "notifications.css"
+    ],
+    "src": "public/resources/css/seller/academy.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/notifications.scss": {
+    "file": "assets/academy-x1XGuNl0.css",
+    "name": "messages",
+    "names": [
+      "academy.css",
+      "credits.css",
+      "payouts.css",
+      "interest.css",
+      "invoices.css",
+      "messages.css",
+      "campaigns.css",
+      "documents.css",
+      "importXLS.css",
+      "statement.css",
+      "notifications.css"
+    ],
+    "src": "public/resources/css/seller/academy.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/offers/general.scss": {
+    "file": "assets/general-CWn5ovAh.css",
+    "name": "general",
+    "names": [
+      "general.css"
+    ],
+    "src": "public/resources/css/seller/offers/general.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/offers/prices.scss": {
+    "file": "assets/prices-CjkjzmtX.css",
+    "name": "prices",
+    "names": [
+      "prices.css"
+    ],
+    "src": "public/resources/css/seller/offers/prices.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/offers/reviews.scss": {
+    "file": "assets/reviews-CJMvUgH4.css",
+    "name": "reviews",
+    "names": [
+      "reviews.css"
+    ],
+    "src": "public/resources/css/seller/offers/reviews.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/offers/stocks.scss": {
+    "file": "assets/stocks-P5_JVfbW.css",
+    "name": "stocks",
+    "names": [
+      "stocks.css"
+    ],
+    "src": "public/resources/css/seller/offers/stocks.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/opportunities/existing-products.scss": {
+    "file": "assets/existing-products-BIilBxH8.css",
+    "name": "existing-products",
+    "names": [
+      "existing-products.css"
+    ],
+    "src": "public/resources/css/seller/opportunities/existing-products.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/orders/orders.scss": {
+    "file": "assets/orders-CCgPUvLq.css",
+    "name": "orders",
+    "names": [
+      "orders.css"
+    ],
+    "src": "public/resources/css/seller/orders/orders.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/loader-BpP4stBE.gif"
+    ]
+  },
+  "public/resources/css/seller/products/add-products.scss": {
+    "file": "assets/add-products--KACCRNR.css",
+    "name": "add-products",
+    "names": [
+      "add-products.css"
+    ],
+    "src": "public/resources/css/seller/products/add-products.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/products/my-products.scss": {
+    "file": "assets/my-products-Dnxo-8-q.css",
+    "name": "my-products",
+    "names": [
+      "my-products.css"
+    ],
+    "src": "public/resources/css/seller/products/my-products.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/loader-BpP4stBE.gif"
+    ]
+  },
+  "public/resources/css/seller/returns/product-health.scss": {
+    "file": "assets/product-health-1j43rL9O.css",
+    "name": "product-health",
+    "names": [
+      "product-health.css"
+    ],
+    "src": "public/resources/css/seller/returns/product-health.scss",
+    "isEntry": true
+  },
+  "public/resources/css/seller/returns/returns.scss": {
+    "file": "assets/returns-DnAxGCEv.css",
+    "name": "returns",
+    "names": [
+      "returns.css"
+    ],
+    "src": "public/resources/css/seller/returns/returns.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/loader-BpP4stBE.gif"
+    ]
+  },
+  "public/resources/css/seller/seller-login.scss": {
+    "file": "assets/seller-login-D--FuxrJ.css",
+    "name": "seller-login",
+    "names": [
+      "seller-login.css"
+    ],
+    "src": "public/resources/css/seller/seller-login.scss",
+    "isEntry": true
+  },
+  "public/resources/files/seller/loader.gif": {
+    "file": "assets/loader-BpP4stBE.gif",
+    "src": "public/resources/files/seller/loader.gif"
+  },
+  "public/resources/files/seller/warehouse-photo.png": {
+    "file": "assets/warehouse-photo-BhOX5ql3.png",
+    "src": "public/resources/files/seller/warehouse-photo.png"
+  },
+  "public/resources/files/users/account/dana-icon-chat.svg": {
+    "file": "assets/dana-icon-chat-DmhLiHBL.svg",
+    "src": "public/resources/files/users/account/dana-icon-chat.svg"
+  },
+  "public/resources/files/users/account/icon_fav.png": {
+    "file": "assets/icon_fav-DjK-qYiB.png",
+    "src": "public/resources/files/users/account/icon_fav.png"
+  },
+  "public/resources/files/users/account/myaccount-empty-billing.png": {
+    "file": "assets/myaccount-empty-billing-CWbv8wSc.png",
+    "src": "public/resources/files/users/account/myaccount-empty-billing.png"
+  },
+  "public/resources/files/users/account/myaccount-empty-cards.png": {
+    "file": "assets/myaccount-empty-cards-Pig_L62a.png",
+    "src": "public/resources/files/users/account/myaccount-empty-cards.png"
+  },
+  "public/resources/files/users/account/myaccount-market-research.svg": {
+    "file": "assets/myaccount-market-research-DgogfnIb.svg",
+    "src": "public/resources/files/users/account/myaccount-market-research.svg"
+  },
+  "public/resources/files/users/account/user-sidebar-icon-orders.svg": {
+    "file": "assets/user-sidebar-icon-orders-C_AISzVC.svg",
+    "src": "public/resources/files/users/account/user-sidebar-icon-orders.svg"
+  },
+  "public/resources/files/users/account/user-sidebar-icon-vouchers.svg": {
+    "file": "assets/user-sidebar-icon-vouchers-BvV4tI1t.svg",
+    "src": "public/resources/files/users/account/user-sidebar-icon-vouchers.svg"
+  },
+  "public/resources/files/users/account/user-sidebar-icon-wallet.svg": {
+    "file": "assets/user-sidebar-icon-wallet-BrOG-9MV.svg",
+    "src": "public/resources/files/users/account/user-sidebar-icon-wallet.svg"
+  },
+  "public/resources/files/users/cards-big-logo.png": {
+    "file": "assets/cards-big-logo-Bhqo_jK2.png",
+    "src": "public/resources/files/users/cards-big-logo.png"
+  },
+  "public/resources/files/users/document.svg": {
+    "file": "assets/document-UXLIpR4z.svg",
+    "src": "public/resources/files/users/document.svg"
+  },
+  "public/resources/files/users/favorite.bin": {
+    "file": "assets/favorite-8nr0UfD1.bin",
+    "src": "public/resources/files/users/favorite.bin"
+  },
+  "public/resources/files/users/genius-banner.avif": {
+    "file": "assets/genius-banner-NC-Uackp.avif",
+    "src": "public/resources/files/users/genius-banner.avif"
+  },
+  "public/resources/files/users/home/mastercard.svg": {
+    "file": "assets/mastercard-BIfSuGXk.svg",
+    "src": "public/resources/files/users/home/mastercard.svg"
+  },
+  "public/resources/files/users/home/prod-card.svg": {
+    "file": "assets/prod-card-DLjlHQNh.svg",
+    "src": "public/resources/files/users/home/prod-card.svg"
+  },
+  "public/resources/files/users/home/sell-on-emart.avif": {
+    "file": "assets/sell-on-emart-CxHdzWT0.avif",
+    "src": "public/resources/files/users/home/sell-on-emart.avif"
+  },
+  "public/resources/files/users/login/ic-sell-button-header.svg": {
+    "file": "assets/ic-sell-button-header-BS02FAoI.svg",
+    "src": "public/resources/files/users/login/ic-sell-button-header.svg"
+  },
+  "public/resources/files/users/login/lock-logo.svg": {
+    "file": "assets/lock-logo-CmrHSzA2.svg",
+    "src": "public/resources/files/users/login/lock-logo.svg"
+  },
+  "public/resources/files/users/login/mail-form-logo.svg": {
+    "file": "assets/mail-form-logo-D3oql1Ja.svg",
+    "src": "public/resources/files/users/login/mail-form-logo.svg"
+  },
+  "public/resources/files/users/login/user-logo.svg": {
+    "file": "assets/user-logo-DoHJIn6S.svg",
+    "src": "public/resources/files/users/login/user-logo.svg"
+  },
+  "public/resources/files/users/login/user-wallet.png": {
+    "file": "assets/user-wallet-B08bGmAx.png",
+    "src": "public/resources/files/users/login/user-wallet.png"
+  },
+  "public/resources/files/users/login/warning.svg": {
+    "file": "assets/warning-DNr3xoXJ.svg",
+    "src": "public/resources/files/users/login/warning.svg"
+  },
+  "public/resources/files/users/pickup_fav.svg": {
+    "file": "assets/pickup_fav-BigBq8r2.svg",
+    "src": "public/resources/files/users/pickup_fav.svg"
+  },
+  "public/resources/files/users/piggy.svg": {
+    "file": "assets/piggy-CMkDhvu1.svg",
+    "src": "public/resources/files/users/piggy.svg"
+  },
+  "public/resources/files/users/shipping.svg": {
+    "file": "assets/shipping-BqQEVHnf.svg",
+    "src": "public/resources/files/users/shipping.svg"
+  },
+  "public/resources/files/users/shopping-bag.svg": {
+    "file": "assets/shopping-bag-DRgi67Si.svg",
+    "src": "public/resources/files/users/shopping-bag.svg"
+  },
+  "resources/css/app.scss": {
+    "file": "assets/app-TD3OuDKr.css",
+    "name": "app",
+    "names": [
+      "app.css"
+    ],
+    "src": "resources/css/app.scss",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BvRk9kiK.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}

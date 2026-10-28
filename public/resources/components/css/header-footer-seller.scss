@@ -1,0 +1,761 @@
+/* Sass needed libraries
+---------------------------------------- */
+@use '../../css/common/components';
+/* Body reserves space for scroll
+---------------------------------------- */
+body {
+    overflow-y: scroll;
+}
+/* Font Awesome 5 Free
+---------------------------------------- */
+::before, ::after {
+    font-family: 'Font Awesome 5 Free';
+}
+/* Font Awesome 5 Free
+---------------------------------------- */
+b {
+    font-weight: 500;
+    color: black;
+}
+/* Body
+---------------------------------------- */
+body{
+    background-color: var(--gray-light);
+}
+/* Top section
+---------------------------------------- */
+.topBarArea {
+    display: grid;
+    grid-template-columns: auto minmax(0, 10fr) auto auto;
+    position: fixed;
+    z-index: 1002;
+    height: 64px;
+    background-color: var(--blue-darkest);
+    box-shadow: 2px 2px 12px var(--gray-main-sh);
+    @extend .wFull;
+    @extend .box;   
+}
+.topLeft-area {
+    width: 344px;
+    @extend .fcc;
+
+    img {
+        width: 320px;
+        @extend .point;
+
+        &:active {
+            scale: 0.98;
+        }
+    }
+}
+.topLarge-area {
+    @extend .fce;
+    
+    span {
+        text-transform: uppercase;
+        @extend .white;
+        @extend .sb16;
+        margin: 0px 32px;
+    }
+}
+.topMiddle-area {
+    @extend .fcc;
+
+    &__menu {
+        box-shadow: 0 0 12px var(--gray-light-sh);
+        border: 1px solid var(--gray-dark);
+        border-radius: 8px;
+        position: absolute;
+        overflow: hidden;
+        display: none;
+        height: auto;
+        width: 150px;
+        top: 40px;
+        @extend .back-white;
+        @extend .point;
+    }
+
+    &__menu-title {
+        border-bottom: 1px solid var(--gray-main);
+        background-color: var(--gray-light);
+        cursor: default;
+        height: 24px;
+        @extend .black;
+        @extend .sb12;
+        @extend .fcc;
+    }
+
+    &__menu-option {
+        padding: 0px 12px;
+        height: 40px;
+        @extend .darkgray;
+        @extend .lt12;
+        @extend .fcs;
+
+        &::before {
+            content: '\f101';
+            @extend .fb12;
+            margin-right: 10px;
+        }
+
+
+        &:hover {
+            background-color: var(--blue-lightest);
+            @extend .blue;
+        }
+
+    }
+
+    &__account-option, &__logout-option {
+        border-top: 1px solid var(--gray-light);
+        padding: 0px 10px;
+        height: 40px;
+        @extend .darkgray;
+        @extend .lt12;
+        @extend .fcs;
+
+
+        &:hover {
+            background-color: var(--blue-lightest);
+            @extend .blue;
+        }
+    }
+
+    &__account-option::before {
+        content: '\f2bd';
+        @extend .fb16;
+        margin-right: 8px;
+
+    }
+
+    &__logout-option::before {
+        content: '\f2f5';
+        @extend .fb16;
+        margin-right: 8px;
+        margin-left: 2px;
+    }
+
+    &__selected {
+        width: auto;
+        padding: 0px 12px;
+        height: calc(100% - 12px);
+        @extend .fcc;
+        @extend .box;
+        @extend .wAuto;
+        margin: 4px 0px;
+        @extend .white;
+        @extend .lt14;
+        @extend .point;
+        @extend .box;
+
+        &::before {
+            content: '\f3c5';
+            @extend .fb14;
+            margin-right: 8px;
+        }
+
+        &::after {
+            content: '\f0d7';
+            @extend .fb14;
+            margin-left: 8px;
+        }
+        
+        &:hover {
+            background-color: var(--blue-dark);
+        }
+    }
+
+    i {
+        padding-bottom: 2px;
+        margin: 0px 4px;
+        @extend .darkgray;
+        @extend .point;
+        @extend .fb16;
+
+        &:hover {
+            @extend .blue;
+        }
+    }
+}
+.headLangArea {
+    width: 100px;
+    margin: 4px 4px 4px 0px;
+    //padding-left: 4px;
+    @extend .sb14;
+    @extend .fcc;
+    @extend .point;
+    
+    border-left: 1px solid white;
+
+    span {
+        border: 1px solid var(--gray-dark);
+        padding-bottom: 5px;
+        border-radius: 2px;
+        margin-right: 4px;
+        height: 10px;
+        width: 20px;
+        @extend .back-white;
+    }
+
+    &:hover {
+        background-color: var(--blue-dark);
+    }
+
+
+    p {
+        width: 70px;
+        @extend .hAuto;
+        @extend .sb16;
+        @extend .fcc;
+        @extend .white;
+    }
+
+    .down::after {
+        content: '\f107';
+        transform: rotate(360deg);
+        transition-duration: 0.3s;
+        margin-left: 10px;
+        @extend .white;
+        @extend .sb12;
+    }
+
+    .up::after {
+        content: '\f107';
+        transform: rotate(180deg);
+        transition-duration: 0.3s;
+        margin-left: 10px;
+        @extend .white;
+        @extend .sb12;
+    }
+}
+
+.langSelect-area {
+    box-shadow: 0 0 12px var(--gray-light-sh);
+    border: 1px solid var(--gray-dark);
+    border-radius: 8px;
+    position: absolute;
+    overflow: hidden;
+    display: none;
+    height: auto;
+    width: 180px;
+    right: 12px;
+    top: 40px;
+    @extend .back-white;
+    @extend .point;
+    
+    div {
+        border-bottom: 1px solid var(--gray-main);
+        background-color: var(--gray-light);
+        cursor: default;
+        height: 24px;
+        @extend .black;
+        @extend .sb12;
+        @extend .fcc;
+    }
+
+    p {
+        border-bottom: 1px solid var(--gray-light);
+        padding: 0px 12px;
+        height: 40px;
+        @extend .darkgray;
+        @extend .lt12;
+        @extend .fcs;
+
+        span {
+            border: 1px solid var(--gray-dark);
+            padding-bottom: 5px;
+            border-radius: 2px;
+            margin-right: 12px;
+            height: 10px;
+            width: 20px;
+        }
+
+        &:hover {
+            background-color: var(--blue-lightest);
+            @extend .blue;
+        }
+    }
+}
+/* Main section
+---------------------------------------- */
+.mainPageSection {
+    background-image: url('/public/resources/files/seller/loader.gif');
+    background-position: calc(100% / 2 + 100px);
+    background-color: var(--gray-light);
+    background-repeat: no-repeat;
+    transition-duration: 0.25s;
+    padding-left: 205px;
+    min-height: 300px;
+    @extend .wFull;
+    @extend .hAuto;
+    @extend .box;
+}
+/* Side menu
+---------------------------------------- */
+.sideBarArea {
+    box-shadow: 2px 0 16px var(--gray-light-sh);
+    border-right: 1px solid var(--gray-darker);
+    background-color: var(--gray-light);
+    transition-duration: 0.25s;
+    position: fixed;
+    z-index: 1003;
+    width: 205px;
+    top: 64px;
+    left: 0px;
+    @extend .hFull;
+    @extend .box;
+}
+.menuButtonArea {
+    @extend .wFull;
+    @extend .hAuto;
+}
+.menuButton-1, .menuButton-2 {
+    border-bottom: 1px solid var(--gray-dark);
+    height: 42px;
+    @extend .darkgray;
+    @extend .point;
+    @extend .lt12;
+    @extend .fbtw;
+    @extend .box;
+}
+.Visible {
+    background-color: var(--gray-light);
+    border-right: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+.Visible:hover {
+    border-left: 2px solid var(--blue-main);
+    @extend .back-white;
+    @extend .box;
+}
+.menuRoute {
+    @extend .darkgray;
+    @extend .no-line;
+    @extend .no-out;
+    @extend .wFull;
+    @extend .hFull;
+    @extend .box;
+    @extend .fcs;
+}
+.menuRoute::before {
+    content: "\f07b";
+    margin-right: 8px;
+    @extend .lt14;
+}
+.menuRoute:hover {
+    @extend .blue;
+}
+.menuRoute::after {
+    content: "";
+    display: none;
+}
+.menuRoute.clicked::after,
+.menuRoute-main.clicked-main::after  {
+    content: "⏴";
+    transform: scaleY(1.5);
+    position: absolute;
+    padding-top: 8px;
+    font-size: 30px;
+    display: block;
+    right: -3px;
+    @extend .blue;
+}
+.menuExpandBtn {
+    @extend .wFull;
+    @extend .hFull;
+    @extend .fcs;
+    @extend .box;
+}
+.menuRoute-main {
+    padding-right: 12px;
+    flex-grow: 1;
+    @extend .darkgray;
+    @extend .no-line;
+    @extend .wAuto;
+    @extend .hFull;
+    @extend .box;
+    @extend .fcs;
+}
+.downArrow {
+    margin-right: 6px;
+}
+.Visible.expanded {
+    border-right: 2px solid var(--blue-main);
+    @extend .back-white;
+    @extend .blue;
+    @extend .sb12;
+}
+.menuRoute-main.clicked-main {
+    border-right: 2px solid var(--blue-main);
+    @extend .back-white;
+    @extend .blue;
+    @extend .sb12;
+}
+.connection {
+    grid-template-columns: 1fr 1fr;
+    cursor: default;
+    display: grid;
+    width: 42px;
+    @extend .hFull; 
+}
+.verticalLine {
+    border-right: 1px dotted var(--blue-light);
+    @extend .box;
+}
+.horizontalLine {
+    border-bottom: 1px dotted var(--blue-light);
+    width: 50%;
+    height: 50%;
+}
+.NOT-Visible {
+    border-right: 2px solid var(--blue-main);
+    display: none;
+    @extend .back-white;
+}
+.dot-border {
+    border-bottom: 1px dotted var(--gray-main);
+}
+.NOT-Visible:hover {
+    background-color: var(--blue-lightest);
+}
+/* Main side menu icons
+---------------------------------------- */
+.menuRoute-main::before, .menuExpandBtn::before {
+    width: 36px;
+    @extend .fb16;
+    @extend .fcc;
+}
+.dashboard::before {
+    content: "\f625";
+}
+.myAccount::before {
+    content: "\f007";
+}
+.products::before {
+    content: "\f1de";
+}
+.importXLS::before {
+    content: "\f093";
+}
+.myOffers::before {
+    content: "\f1fe";
+}
+.opportunities::before {
+    content: "\f005";
+}
+.orders::before {
+    content: "\f07a";
+}
+.logistics::before {
+    content: "\f0d1";
+}
+.fulfilment::before {
+    content: "\f468";
+}
+.ads::before {
+    content: "\f200";
+}
+.campaigns::before {
+    content: "\f274";
+}
+.messages::before {
+    content: "\f0e0";
+}
+.notifications::before {
+    content: "\f0f3";
+}
+.returns::before {
+    content: "\e56a";
+}
+.financial::before {
+    content: "\f1ea";
+}
+.academy::before {
+    content: "\f19d";
+}
+/* Small side menu
+---------------------------------------- */
+.iconMenuButton {
+    border-bottom: 1px solid var(--gray-dark);
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+    height: 42px;
+    width: 42px;
+    @extend .darkgray;
+    @extend .point;
+    @extend .lt16;
+    @extend .fcc;
+    @extend .box;
+}
+.menuSideIcons {
+    border-right: 1px solid var(--gray-darker);
+    box-shadow: 2px 0 16px var(--gray-light-sh);
+    background-color: var(--gray-light);
+    transition-duration: 0.25s;
+    position: fixed;
+    z-index: 1003;
+    display: none;
+    left: -42px;
+    top: 64px;
+    @extend .hFull;
+    @extend .box;
+}
+.iconMenuButton:hover {
+    border-left: 3px solid var(--blue-main);
+    @extend .back-white;
+    @extend .blue;
+    @extend .box;
+}
+.iconMenuButton:hover .expandIconMenu {
+    border-right: 1px solid var(--gray-dark);
+    border-top: 1px solid var(--gray-dark);
+    display: block;
+}
+.minimize, .iconMenuButton.maximize {
+    height: 16px;
+    @extend .lt10;
+    @extend .fcc;
+}
+.expandIconMenu {
+    box-shadow: 4px 4px 8px var(--gray-light-sh);
+    position: absolute;
+    display: none;
+    width: 160px;
+    left: 43px;
+    @extend .hAuto;
+}
+.expandIconButton, .expandIconTitle, .noExpandIconTitle {
+    border-bottom: 1px solid var(--gray-dark);
+    padding-left: 10px;
+    height: 42px;
+    @extend .darkgray;
+    @extend .lt12;
+    @extend .box;
+    @extend .fcs;
+}
+.noExpandIconTitle, .expandIconTitle {
+    background-color: var(--gray-light);
+    @extend .blue;
+    @extend .sb12;
+}
+.expandIconTitle {
+    cursor: default;
+}
+.expandIconButton{
+    @extend .back-white;
+    @extend .no-line;
+}
+.expandIconButton::before {
+    content: "\f07b";
+    margin-right: 8px;
+    @extend .lt14;
+}
+.expandIconButton:hover {
+    background-color: var(--blue-lightest);
+    @extend .blue;
+}
+.selected {
+    border-left: 2px solid var(--blue-main);
+    @extend .back-white;
+    @extend .blue;
+    @extend .box;
+}
+.dashboard-icon-menu {
+    top: -1px;
+}
+.account-icon-menu {
+    top: calc(41px * 1);
+}
+.products-icon-menu {
+    top: calc(41px * 2 + 1px);
+}
+.importXLS-icon-menu {
+    top: calc(41px * 3 + 2px);
+}
+.offers-icon-menu {
+    top: calc(41px * 4 + 3px);
+}
+.opportunities-icon-menu {
+    top: calc(41px * 5 + 4px);
+}
+.orders-icon-menu {
+    top: calc(41px * 6 + 5px);
+}
+.logistics-icon-menu {
+    top: calc(41px * 7 + 6px);
+}
+.fulfilment-icon-menu {
+    top: calc(41px * 8 + 7px);
+}
+.ads-icon-menu {
+    top: calc(41px * 9 + 8px);
+}
+.campaigns-icon-menu {
+    top: calc(41px * 10 + 9px);
+}
+.messages-icon-menu {
+    top: calc(41px * 11 + 10px);
+}
+.notifications-icon-menu {
+    top: calc(41px * 12 + 11px);
+}
+.returns-icon-menu {
+    top: calc(41px * 13 + 12px);
+}
+.financial-icon-menu {
+    top: calc(41px * 14 + 13px);
+}
+.academy-icon-menu {
+    top: calc(41px * 15 + 14px);
+}
+/* Footer
+---------------------------------------- */
+footer {
+    transition-duration: 0.25s;
+    padding-left: 205px;
+    padding-top: 16px;
+    @extend .wFull;
+    @extend .hAuto;
+    @extend .box;
+}
+.footerMainArea {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.4);
+    margin: 0px 24px;
+    padding: 16px;
+    @extend .lt14;
+    @extend .fcc;
+    @extend .box;
+}
+.footerLink {
+    @extend .no-line;
+    @extend .blue;
+}
+.footerLink:hover {
+    text-decoration: underline;
+}
+/* Page up button
+---------------------------------------- */
+.upButton {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid transparent;
+    backdrop-filter: blur(3px);
+    border-radius: 4px;
+    padding: 3px 8px;
+    position: fixed;
+    z-index: 10000;
+    display: none;
+    height: 32px;
+    bottom: 32px;
+    width: 32px;
+    right: 8px;
+    left: auto;
+    top: auto;
+    @extend .point;
+    @extend .fcc;
+    @extend .box;
+}
+.upButton::before {
+    content: '\f102';
+    @extend .white;
+    @extend .fb16;
+}
+.upButton:hover {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+.upButton:active {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid black;
+}
+/* Cookie bar
+---------------------------------------- */
+.cookie {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 48px;
+    padding: 24px 48px;
+    position: fixed;
+    bottom: -150px;
+    z-index: 99999;
+    height: 124px;
+    @extend .back-white;
+    @extend .wFull;
+    @extend .box;
+    box-shadow: 0 -1px 12px var(--gray-main-sh);
+    transition: bottom 0.5s ease-in-out;
+
+    &-text {
+        margin: auto auto auto 0px;
+        
+        p:nth-Child(1) {
+            margin-bottom: 8px;
+            @extend .fb18;
+            @extend .black;
+        }
+
+        p:nth-Child(2) {
+            @extend .th14;
+            @extend .black;
+        }
+    }
+
+    &-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 8px;
+        
+        button {
+            margin: auto;
+            height: 40px;
+            border-radius: 6px;
+            @extend .wFull;
+            @extend .point;
+            @extend .fcc;
+            @extend .box;
+        }
+
+        button:nth-Child(1) {
+            border: 1px solid var(--blue-main);
+            @extend .back-white;
+            @extend .blue;
+            @extend .lt16;
+
+            &:hover {
+                background-color: var(--blue-lightest);
+            }
+
+            &:active {
+                scale: 0.95;
+            }
+        }
+
+        button:nth-Child(2), button:nth-Child(3) {
+            box-shadow: 1px 1px 2px var(--gray-main-sh);
+            border: 2px solid var(--blue-dark);
+            background-color: var(--blue-main);
+            @extend .white;
+            @extend .lt16;
+
+            &:hover {
+                border: 2px solid var(--blue-darkest);
+                background-color: var(--blue-darkest);
+            }
+
+            &:active {
+                scale: 0.95;
+            }
+        }
+    }
+}
+
+.redDot {
+    width: 24px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--red-main);
+    border-radius: 15px;
+    @extend .fcc;
+    @extend .white;
+    @extend .fb12;
+    margin-right: 12px;
+    
+}

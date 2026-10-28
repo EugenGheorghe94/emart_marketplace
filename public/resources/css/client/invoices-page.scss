@@ -1,0 +1,102 @@
+/* Sass needed libraries
+---------------------------------------- */
+@use '../../css/common/components';
+/* Font Awesome 5 Free
+---------------------------------------- */
+::before, ::after {
+    font-family: 'Icons Pack';
+}
+/*
+---------------------------------------- */
+b {
+    font-weight: 500;
+    @extend .black;
+}
+/*
+---------------------------------------- */
+.invoices-area {
+    width: 100%;
+    height: auto;
+    margin: 0px 0px auto 0px;
+    @extend .back-white;
+    border: 1px solid var(--gray-light-sh);
+    box-shadow: 0 0 16px var(--gray-lighter-sh);
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    &__title {
+        height: 50px;
+        margin: 0px 12px;
+        @extend .fbtw;
+        @extend .lt18;
+        border-bottom: 1px solid var(--gray-light);
+
+        button {
+            @extend .white;
+            background-color: var(--blue-main);
+            @extend .no-bor;
+            @extend .no-out;
+            padding: 6px 12px;
+            border-radius: 6px;
+            @extend .point;
+
+            &:hover {
+                background-color: var(--blue-darkest);
+            }
+
+            &:active {
+                scale: 0.97;
+            }
+        }
+    }
+
+    &__cards {
+        padding-bottom: 24px;
+        height: auto;
+        @extend .fcc;
+        flex-direction: column;
+        gap: 8px;
+        
+        div {
+            margin: 24px;
+            background-image: url('/public/resources/files/users/document.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 200px;
+        }
+
+        p:nth-Child(2) {
+            width: 350px;
+            height: auto;
+            text-align: center;
+            @extend .lt16;
+        }
+
+         p:nth-Child(3) {
+            width: 350px;
+            height: auto;
+            text-align: center;
+            @extend .th13;
+            @extend .darkgray;
+        }
+
+        a {
+            @extend .lt14;
+            padding: 6px 16px;
+            @extend .blue;
+            @extend .point;
+            border-radius: 8px;
+
+            &:hover {
+                background-color: var(--blue-lightest);
+            }
+
+            &:active {
+                scale: 0.97;
+            }
+        }
+    }   
+}
+/*
+---------------------------------------- */

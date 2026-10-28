@@ -1,0 +1,25 @@
+$(document).ready( function() {
+
+
+
+    ////////////////////////////////////////////////////////////////////
+    // Page main menu button click
+    $('.importXLS').trigger('click');
+    $('.importXLS').addClass('clicked-main');
+    ////////////////////////////////////////////////////////////////////
+
+    
+
+    ////////////////////////////////////////////////////////////////////
+    // Page small icon button click
+    $('.importXLS-div').css({color: 'var(--blue-main)'});
+    $('.importXLS-div').css({backgroundColor: 'var(--blue-lightest)'});
+    $('.importXLS-icon-menu').trigger('click');
+    ////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+});
