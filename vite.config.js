@@ -18,15 +18,19 @@ export default defineConfig({
                 '/public/resources/css/client/home-page.scss',
                 '/public/resources/css/client/prod-category.scss',
                 '/public/resources/css/client/prod-listing.scss',
-                '/public/resources/css/client/my-account.scss',
                 '/public/resources/css/client/premio-page.scss',
                 '/public/resources/css/client/cards-page.scss',
                 '/public/resources/css/client/orders-page.scss',
                 '/public/resources/css/client/returns-page.scss',
+                '/public/resources/css/client/favorites-page.scss',
                 '/public/resources/css/client/reviews-page.scss',
                 '/public/resources/css/client/addresses-page.scss',
                 '/public/resources/css/client/invoices-page.scss',
+                '/public/resources/css/client/subscriptions-page.scss',
+                '/public/resources/css/client/my-account.scss',
                 '/public/resources/css/client/checkout-page.scss',
+                'public/resources/css/client/cart-page.scss',
+                
 
 
 
@@ -39,6 +43,7 @@ export default defineConfig({
                 '/public/resources/components/css/header-footer-client.scss',
                 '/public/resources/components/css/dynamic-seller-page-view.scss',
                 '/public/resources/components/css/client-account-side-menu.scss',
+
 
 
 

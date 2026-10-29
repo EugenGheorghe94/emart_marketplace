@@ -2,7 +2,7 @@
 
 @once
     @push('component-styles')
-        @vite('/public/resources/components/css/dynamic-seller-page-view.scss')
+        @vite('public/resources/components/css/dynamic-seller-page-view.scss')
     @endpush
 
     @push('component-scripts')

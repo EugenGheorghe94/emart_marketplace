@@ -120,6 +120,20 @@
       "assets/cards-big-logo-Bhqo_jK2.png"
     ]
   },
+  "public/resources/css/client/cart-page.scss": {
+    "file": "assets/cart-page-De14dU95.css",
+    "name": "cart-page",
+    "names": [
+      "cart-page.css"
+    ],
+    "src": "public/resources/css/client/cart-page.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/loader-BpP4stBE.gif",
+      "assets/shopping-bag-DRgi67Si.svg",
+      "assets/user-wallet-B08bGmAx.png"
+    ]
+  },
   "public/resources/css/client/checkout-page.scss": {
     "file": "assets/checkout-page-dBGXpeej.css",
     "name": "checkout-page",
@@ -146,6 +160,20 @@
       "assets/warning-DNr3xoXJ.svg",
       "assets/lock-logo-CmrHSzA2.svg",
       "assets/user-logo-DoHJIn6S.svg"
+    ]
+  },
+  "public/resources/css/client/favorites-page.scss": {
+    "file": "assets/favorites-page-BOUEOSH8.css",
+    "name": "favorites-page",
+    "names": [
+      "favorites-page.css"
+    ],
+    "src": "public/resources/css/client/favorites-page.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/favorite-8nr0UfD1.bin",
+      "assets/loader-BpP4stBE.gif",
+      "assets/user-wallet-B08bGmAx.png"
     ]
   },
   "public/resources/css/client/home-page.scss": {
@@ -272,6 +300,15 @@
       "assets/myaccount-market-research-DgogfnIb.svg",
       "assets/loader-BpP4stBE.gif"
     ]
+  },
+  "public/resources/css/client/subscriptions-page.scss": {
+    "file": "assets/subscriptions-page-vp_P6S-Q.css",
+    "name": "subscriptions-page",
+    "names": [
+      "subscriptions-page.css"
+    ],
+    "src": "public/resources/css/client/subscriptions-page.scss",
+    "isEntry": true
   },
   "public/resources/css/common/_components.scss": {
     "file": "assets/_components-D7KmvXHj.css",

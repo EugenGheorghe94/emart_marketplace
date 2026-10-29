@@ -2,7 +2,7 @@
 
 @once
     @push('component-styles')
-        @vite('/public/resources/components/css/client-account-side-menu.scss')
+        @vite('public/resources/components/css/client-account-side-menu.scss')
     @endpush
 
 

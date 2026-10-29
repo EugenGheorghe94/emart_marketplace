@@ -2,7 +2,7 @@
 
 <x-layouts.client-layout>
     <x-slot:styles>
-        @vite('/public/resources/css/client/my-account.scss')
+        @vite('public/resources/css/client/my-account.scss')
         <title>Account</title>
     </x-slot:styles>
 
